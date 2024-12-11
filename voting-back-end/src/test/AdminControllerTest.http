@@ -1,0 +1,16 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+GET localhost:8080/auth/test
+
+###
+POST localhost:8080/auth/createTeam
+Content-Type: application/json
+
+{
+  "teamName": "TestTeam",
+  "school": "TestSchool",
+  "type": "BYTE"
+}

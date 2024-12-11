@@ -1,4 +1,4 @@
-package org.voting.votingbackend.model;
+package org.votingbackend.database;
 
 import org.springframework.stereotype.Service;
 

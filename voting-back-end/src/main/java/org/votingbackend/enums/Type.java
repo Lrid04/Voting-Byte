@@ -1,4 +1,4 @@
-package org.voting.votingbackend.model;
+package org.votingbackend.enums;
 
 public enum Type {
     BIT,
