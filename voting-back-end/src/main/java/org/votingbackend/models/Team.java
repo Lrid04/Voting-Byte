@@ -3,9 +3,9 @@ import jakarta.persistence.*;
 import org.votingbackend.enums.Type;
 
 @Entity
-@Table
 public class Team {
     @Id
+    @Column
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer teamId;
     @Column
