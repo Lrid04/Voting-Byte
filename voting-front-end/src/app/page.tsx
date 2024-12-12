@@ -1,3 +1,4 @@
+import NavBar from "./ui/navbar"
 import { getIp } from "./scripts/ipGrabber";
 import Footer from "./comp/footer";
 import Link from 'next/link'
