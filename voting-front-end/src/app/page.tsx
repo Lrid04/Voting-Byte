@@ -1,5 +1,10 @@
-import NavBar from "./ui/navbar"
+import NavBar from "./comp/navbar"
 
 export default function Page() {
-  return NavBar();
+  return (
+    <div>
+      <NavBar/>
+    </div>
+    
+  );
 } 
