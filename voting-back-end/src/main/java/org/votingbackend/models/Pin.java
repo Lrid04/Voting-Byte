@@ -7,7 +7,7 @@ import org.votingbackend.enums.Type;
 public class Pin {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private long pinId;
+    private Integer pinId;
     @Column(length = 5)
     private String pin;
     @Column
@@ -22,7 +22,7 @@ public class Pin {
         return pinId;
     }
 
-    public void setPinId(long pinId) {
+    public void setPinId(int pinId) {
         this.pinId = pinId;
     }
 
