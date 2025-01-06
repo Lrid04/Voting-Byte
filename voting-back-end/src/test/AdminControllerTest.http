@@ -1,7 +1,3 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
-
 ###
 GET localhost:8080/auth/test
 
@@ -14,3 +10,7 @@ Content-Type: application/json
   "school": "TestSchool",
   "type": "BYTE"
 }
+###
+GET localhost:8080/auth/allTeams
+
+###

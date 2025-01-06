@@ -1,4 +1,4 @@
-package org.votingbackend.services;
+package org.votingbackend.services.Team;
 
 import org.votingbackend.models.Team;
 

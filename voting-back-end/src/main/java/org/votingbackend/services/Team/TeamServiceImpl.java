@@ -1,4 +1,4 @@
-package org.votingbackend.services;
+package org.votingbackend.services.Team;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,6 @@ public class TeamServiceImpl implements TeamService {
     public TeamServiceImpl(TeamRepository teamRepository) {
         this.teamRepository = teamRepository;
     }
-
 
     @Override
     public List<Team> findAll() {

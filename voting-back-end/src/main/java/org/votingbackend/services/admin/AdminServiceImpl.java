@@ -1,7 +1,9 @@
-package org.votingbackend.services;
+package org.votingbackend.services.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.votingbackend.exceptions.ExistsException;
+import org.votingbackend.exceptions.InvalidException;
 import org.votingbackend.models.Admin;
 import org.votingbackend.repositories.AdminRepository;
 
@@ -23,13 +25,13 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public String createAdmin(Admin admin) {
+    public String createAdmin(Admin admin) throws ExistsException {
         try{
             if(!adminRepository.existsById(admin.getAdminId())) {
                 adminRepository.save(admin);
                 return "Admin created";
             }
-            return "Admin already exists";
+            throw new ExistsException("Admin Already Exists");
         }catch(Exception e){
             return "Admin creation failed";
         }
