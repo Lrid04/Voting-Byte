@@ -2,6 +2,8 @@ package org.votingbackend.services.Session;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.votingbackend.exceptions.ExistsException;
+import org.votingbackend.exceptions.NotFoundException;
 import org.votingbackend.models.Session;
 import org.votingbackend.repositories.SessionRepository;
 
@@ -23,21 +25,19 @@ public class SessionServiceImpl implements SessionService {
     }
 
     @Override
-    public String createSession(Session session) {
-        try{
-            if (!sessionRepository.existsById(session.getSessionId())){
-                sessionRepository.save(session);
-                return "Session created";
-            }
-            return "Session already exists";
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "Error creating session";
+    public String createSession(Session session) throws ExistsException {
+        if (!sessionRepository.existsById(session.getSessionId())) {
+            sessionRepository.save(session);
+            return "Session created";
         }
+        throw new ExistsException("Session already exists");
     }
 
     @Override
-    public List<Session> getAllByIp(String ip) {
+    public List<Session> getAllByIp(String ip) throws NotFoundException {
+        if (sessionRepository.getAllByIp(ip).isEmpty()) {
+            throw new NotFoundException(String.format("No session found for ip: %s", ip));
+        }
         return sessionRepository.getAllByIp(ip);
     }
 

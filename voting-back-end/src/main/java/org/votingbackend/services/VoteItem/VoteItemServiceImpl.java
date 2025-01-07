@@ -2,6 +2,7 @@ package org.votingbackend.services.VoteItem;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.votingbackend.exceptions.ExistsException;
 import org.votingbackend.models.Team;
 import org.votingbackend.models.VoteItems;
 import org.votingbackend.repositories.VoteItemRepository;
@@ -23,17 +24,12 @@ public class VoteItemServiceImpl implements VoteItemService {
     }
 
     @Override
-    public String createVoteItem(VoteItems voteItems) {
-        try{
-            if(!voteItemRepository.existsById(voteItems.getVoteItemId())){
-                voteItemRepository.save(voteItems);
-                return "Vote item created";
-            }
-            return "Vote item already exists";
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "Error creating vote item";
+    public String createVoteItem(VoteItems voteItems) throws ExistsException {
+        if (!voteItemRepository.existsById(voteItems.getVoteItemId())) {
+            voteItemRepository.save(voteItems);
+            return "Vote item created";
         }
+        throw new ExistsException("Vote Item Already Exists");
     }
 
     @Override

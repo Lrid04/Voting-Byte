@@ -27,24 +27,18 @@ public class PinServiceImpl implements PinService {
 
     @Override
     public String createPin(Pin pin) throws ExistsException {
-        try{
-            if (!pinRepository.existsByPin(pin.getPin())){
-                pinRepository.save(pin);
-                return "PIN CREATED";
-            }
-            throw new ExistsException("Pin Already Exists");
-        } catch (Exception e) {
-            return "Error Creating Pin";
+        if (!pinRepository.existsByPin(pin.getPin())) {
+            pinRepository.save(pin);
+            return "PIN CREATED";
         }
+        throw new ExistsException("Pin Already Exists");
     }
 
     @Override
     public List<Pin> findAllByPinType(String type) throws NotFoundException {
-        if (!pinRepository.findByPinType(Type.valueOf(type)).isEmpty())
-        {
+        if (!pinRepository.findByPinType(Type.valueOf(type)).isEmpty()) {
             return (List<Pin>) pinRepository.findByPinType(Type.valueOf(type));
-        }else{
-            throw new NotFoundException("Pin Type Not Found");
         }
+            throw new NotFoundException("Pin Type Not Found");
     }
 }

@@ -26,14 +26,10 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public String createAdmin(Admin admin) throws ExistsException {
-        try{
-            if(!adminRepository.existsById(admin.getAdminId())) {
-                adminRepository.save(admin);
-                return "Admin created";
-            }
-            throw new ExistsException("Admin Already Exists");
-        }catch(Exception e){
-            return "Admin creation failed";
+        if (!adminRepository.existsById(admin.getAdminId())) {
+            adminRepository.save(admin);
+            return "Admin created";
         }
+        throw new ExistsException("Admin Already Exists");
     }
 }

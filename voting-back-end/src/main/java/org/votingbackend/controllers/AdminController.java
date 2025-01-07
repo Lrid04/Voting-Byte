@@ -47,17 +47,18 @@ public class AdminController {
         return new ResponseEntity<>(teamServiceImpl.findAll(), HttpStatus.OK);
     }
 
-    @RequestMapping(value="createTeam", method = RequestMethod.POST)
+
+    @PostMapping(value="createTeam")
     public ResponseEntity<String> createTeam(@RequestBody Team team) {
         try{
             return new ResponseEntity<>(teamServiceImpl.createTeam(team), HttpStatus.CREATED);
-        }catch(Exception e){
+        }catch(ExistsException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
 
     }
 
-    @RequestMapping(value="createAdmin", method = RequestMethod.POST)
+    @PostMapping(value="createAdmin")
     public ResponseEntity<String> createAdmin(@RequestBody Admin admin) {
         try{
             return new ResponseEntity<>(adminServiceImpl.createAdmin(admin), HttpStatus.CREATED);
@@ -67,7 +68,7 @@ public class AdminController {
 
     }
 
-    @RequestMapping(value="createPin", method = RequestMethod.POST)
+    @PostMapping(value="createPin")
     public ResponseEntity<String> createPin(@RequestBody Pin pin) {
         try{
             return new ResponseEntity<>(pinServiceImpl.createPin(pin), HttpStatus.CREATED);
@@ -76,8 +77,13 @@ public class AdminController {
         }
     }
 
-    @RequestMapping(value="createSession", method = RequestMethod.POST)
+    @PostMapping(value="createSession")
     public ResponseEntity<String> createSession(@RequestBody Session session) {
-        return new ResponseEntity<>(sessionServiceImpl.createSession(session), HttpStatus.CREATED);
+        try{
+            return new ResponseEntity<>(sessionServiceImpl.createSession(session), HttpStatus.CREATED);
+        }catch (ExistsException e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
+        }
+
     }
 }
