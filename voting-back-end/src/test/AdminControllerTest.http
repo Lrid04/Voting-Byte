@@ -1,0 +1,16 @@
+###
+GET localhost:8080/auth/test
+
+###
+POST localhost:8080/auth/createTeam
+Content-Type: application/json
+
+{
+  "teamName": "TestTeam",
+  "school": "TestSchool",
+  "type": "BYTE"
+}
+###
+GET localhost:8080/auth/allTeams
+
+###
