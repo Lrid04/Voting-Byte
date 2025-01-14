@@ -6,4 +6,5 @@ import org.votingbackend.models.Admin;
 
 @Repository
 public interface AdminRepository extends CrudRepository<Admin, Integer> {
+    boolean existsByUsername(String username);
 }

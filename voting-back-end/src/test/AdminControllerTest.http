@@ -1,7 +1,7 @@
-###
+### Test for connection
 GET localhost:8080/auth/test
 
-###
+### Test For Creating a Team
 POST localhost:8080/auth/createTeam
 Content-Type: application/json
 
@@ -10,7 +10,35 @@ Content-Type: application/json
   "school": "TestSchool",
   "type": "BYTE"
 }
-###
+### Test To Return All Teams
 GET localhost:8080/auth/allTeams
+
+### Test To Create Pins To DataBase
+POST localhost:8080/auth/createPin
+Content-Type: application/json
+
+{
+  "pinType": "BIT",
+  "company": "Big Pharma",
+  "ownerName": "Barb"
+}
+### Test To Get All Pins
+GET localhost:8080/auth/allPins
+
+### Test To Get Admin
+GET localhost:8080/auth/allAdmins
+
+### Test To Create Session
+POST localhost:8080/auth/createSession
+Content-Type: application/json
+
+{
+  "ip": "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
+  "deviceId": "d1243e24-7097-4d6b-90b7-5a5d2a1e5f32",
+  "expiresAt": "2025-01-13T19:15:00Z"
+}
+
+### Test To Get All Sessions
+GET localhost:8080/auth/allSessions
 
 ###
