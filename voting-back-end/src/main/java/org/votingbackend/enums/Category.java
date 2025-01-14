@@ -1,6 +1,6 @@
 package org.votingbackend.enums;
 
-public enum Type {
+public enum Category {
     BIT,
     BYTE,
     COLLEGE

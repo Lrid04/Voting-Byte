@@ -5,7 +5,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.votingbackend.enums.Type;
 import org.votingbackend.exceptions.ExistsException;
 import org.votingbackend.models.*;
 import org.votingbackend.services.Pin.PinServiceImpl;
@@ -13,10 +12,10 @@ import org.votingbackend.services.Session.SessionServiceImpl;
 import org.votingbackend.services.Team.TeamServiceImpl;
 import org.votingbackend.services.admin.AdminServiceImpl;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin(value="*")
 public class AdminController {
     private final TeamServiceImpl teamServiceImpl;
     private final AdminServiceImpl adminServiceImpl;
@@ -77,7 +76,7 @@ public class AdminController {
     @PostMapping(value="/createPin")
     public ResponseEntity<String> createPin(@RequestBody Pin pin) {
         try{
-            return new ResponseEntity<>(pinServiceImpl.createPin(pin.getPinType(), pin.getCompany(), pin.getOwnerName()), HttpStatus.CREATED);
+            return new ResponseEntity<>(pinServiceImpl.createPin(pin.getPinCategory(), pin.getPinType(), pin.getCompany(), pin.getOwnerName()), HttpStatus.CREATED);
         }catch (ExistsException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
         } catch (Exception e){

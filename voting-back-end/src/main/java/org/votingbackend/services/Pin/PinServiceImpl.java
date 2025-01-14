@@ -2,7 +2,8 @@ package org.votingbackend.services.Pin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.votingbackend.enums.Type;
+import org.votingbackend.enums.Category;
+import org.votingbackend.enums.PinType;
 import org.votingbackend.exceptions.ExistsException;
 import org.votingbackend.exceptions.NotFoundException;
 import org.votingbackend.models.Pin;
@@ -26,16 +27,18 @@ public class PinServiceImpl implements PinService {
     }
 
     @Override
-    public String createPin(Type type, String company, String ownerName) throws ExistsException {
+    public String createPin(Category category, PinType pinType, String company, String ownerName) throws ExistsException {
         if (!pinRepository.findByOwnerName(ownerName).isEmpty()){
             throw new ExistsException("Pin already exists");
         }
         Pin pin1 = new Pin();
-        pin1.setPinType(type);
+        pin1.setPinCategory(category);
+        pin1.setPinType(pinType);
         pin1.setCompany(company);
         pin1.setOwnerName(ownerName);
         Pin pin2 = new Pin();
-        pin2.setPinType(type);
+        pin2.setPinCategory(category);
+        pin2.setPinType(pinType);
         pin2.setCompany(company);
         pin2.setOwnerName(ownerName);
         while (true) {
@@ -59,8 +62,8 @@ public class PinServiceImpl implements PinService {
 
     @Override
     public List<Pin> findAllByPinType(String type) throws NotFoundException {
-        if (!pinRepository.findByPinType(Type.valueOf(type)).isEmpty()) {
-            return (List<Pin>) pinRepository.findByPinType(Type.valueOf(type));
+        if (!pinRepository.findByPinType(Category.valueOf(type)).isEmpty()) {
+            return (List<Pin>) pinRepository.findByPinType(Category.valueOf(type));
         }
             throw new NotFoundException("Pin Type Not Found");
     }
