@@ -44,11 +44,11 @@ public class Team {
         this.school = school;
     }
 
-    public Category getType() {
+    public Category getCategory() {
         return category;
     }
 
-    public void setType(Category category) {
+    public void setCategory(Category category) {
         this.category = category;
     }
 }
