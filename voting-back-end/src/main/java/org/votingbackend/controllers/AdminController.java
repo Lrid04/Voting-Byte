@@ -9,6 +9,7 @@ import org.votingbackend.enums.Type;
 import org.votingbackend.exceptions.ExistsException;
 import org.votingbackend.models.*;
 import org.votingbackend.services.Pin.PinServiceImpl;
+import org.votingbackend.services.Session.SessionServiceImpl;
 import org.votingbackend.services.Team.TeamServiceImpl;
 import org.votingbackend.services.admin.AdminServiceImpl;
 import java.util.List;
@@ -20,15 +21,18 @@ public class AdminController {
     private final TeamServiceImpl teamServiceImpl;
     private final AdminServiceImpl adminServiceImpl;
     private final PinServiceImpl pinServiceImpl;
+    private final SessionServiceImpl sessionServiceImpl;
     private final Environment env;
 
 
     @Autowired
-    public AdminController(AdminServiceImpl adminServiceImpl, PinServiceImpl pinServiceImpl, TeamServiceImpl teamServiceImpl, Environment env) {
+    public AdminController(AdminServiceImpl adminServiceImpl, PinServiceImpl pinServiceImpl, TeamServiceImpl teamServiceImpl,
+                           SessionServiceImpl sessionServiceImpl, Environment env) {
         this.env = env;
         this.adminServiceImpl = adminServiceImpl;
         this.pinServiceImpl = pinServiceImpl;
         this.teamServiceImpl = teamServiceImpl;
+        this.sessionServiceImpl = sessionServiceImpl;
         createAdmin();
     }
 
@@ -67,17 +71,13 @@ public class AdminController {
 
     @GetMapping(value="/allAdmins")
     public ResponseEntity<List<Admin>> getAdmins() {
-        try{
-            return new ResponseEntity<>(adminServiceImpl.getAll(), HttpStatus.OK);
-        } catch (Exception e){
-            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
-        }
+        return new ResponseEntity<>(adminServiceImpl.getAll(), HttpStatus.OK);
     }
 
     @PostMapping(value="/createPin")
-    public ResponseEntity<String> createPin(@RequestBody Map<String, String> req) {
+    public ResponseEntity<String> createPin(@RequestBody Pin pin) {
         try{
-            return new ResponseEntity<>(pinServiceImpl.createPin(Type.valueOf(req.get("type")),req.get("company"),req.get("ownerName")), HttpStatus.CREATED);
+            return new ResponseEntity<>(pinServiceImpl.createPin(pin.getPinType(), pin.getCompany(), pin.getOwnerName()), HttpStatus.CREATED);
         }catch (ExistsException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
         } catch (Exception e){
@@ -85,6 +85,17 @@ public class AdminController {
         }
     }
 
+    @GetMapping(value="/allSessions")
+    public ResponseEntity<List<Session>> getSessions() {
+       return new ResponseEntity<>(sessionServiceImpl.getAll(), HttpStatus.OK);
+    }
 
-
+    @PostMapping(value="/createSession")
+    public ResponseEntity<String> createSession(@RequestBody Session session) {
+        try{
+            return new ResponseEntity<>(sessionServiceImpl.createSession(session), HttpStatus.CREATED);
+        } catch (ExistsException e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
+        }
+    }
 }
