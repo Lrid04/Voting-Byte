@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface AdminService {
     List<Admin> getAll();
-    String createAdmin(Admin admin) throws ExistsException;
+    void createAdmin(Admin admin);
 }

@@ -1,20 +1,18 @@
 package org.votingbackend.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.votingbackend.enums.Type;
 import org.votingbackend.exceptions.ExistsException;
-import org.votingbackend.exceptions.InvalidException;
 import org.votingbackend.models.*;
 import org.votingbackend.services.Pin.PinServiceImpl;
-import org.votingbackend.services.Session.SessionServiceImpl;
 import org.votingbackend.services.Team.TeamServiceImpl;
-import org.votingbackend.services.VoteItem.VoteItemServiceImpl;
-import org.votingbackend.services.Vote.VoteServiceImpl;
 import org.votingbackend.services.admin.AdminServiceImpl;
-
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
@@ -22,19 +20,23 @@ public class AdminController {
     private final TeamServiceImpl teamServiceImpl;
     private final AdminServiceImpl adminServiceImpl;
     private final PinServiceImpl pinServiceImpl;
-    private final VoteItemServiceImpl voteItemServiceImpl;
-    private final VoteServiceImpl voteServiceImpl;
-    private final SessionServiceImpl sessionServiceImpl;
+    private final Environment env;
+
 
     @Autowired
-    public AdminController(AdminServiceImpl adminServiceImpl, PinServiceImpl pinServiceImpl, TeamServiceImpl teamServiceImpl,
-                           VoteItemServiceImpl voteItemServiceImpl, VoteServiceImpl voteServiceImpl, SessionServiceImpl sessionServiceImpl) {
+    public AdminController(AdminServiceImpl adminServiceImpl, PinServiceImpl pinServiceImpl, TeamServiceImpl teamServiceImpl, Environment env) {
+        this.env = env;
         this.adminServiceImpl = adminServiceImpl;
         this.pinServiceImpl = pinServiceImpl;
         this.teamServiceImpl = teamServiceImpl;
-        this.voteItemServiceImpl = voteItemServiceImpl;
-        this.voteServiceImpl = voteServiceImpl;
-        this.sessionServiceImpl = sessionServiceImpl;
+        createAdmin();
+    }
+
+    public void createAdmin(){
+        Admin admin = new Admin();
+        admin.setUsername(env.getProperty("admin_username"));
+        admin.setPassword(env.getProperty("admin_password"));
+        adminServiceImpl.createAdmin(admin);
     }
 
     @GetMapping("/test")
@@ -42,13 +44,18 @@ public class AdminController {
         return "test";
     }
 
-    @GetMapping(value="allTeams")
+    @GetMapping(value="/allTeams")
     public ResponseEntity<List<Team>> getTeams() {
         return new ResponseEntity<>(teamServiceImpl.findAll(), HttpStatus.OK);
     }
 
+    @GetMapping(value="/allPins")
+    public ResponseEntity<List<Pin>> getPins() {
+        return new ResponseEntity<>(pinServiceImpl.getAll(), HttpStatus.OK);
+    }
 
-    @PostMapping(value="createTeam")
+
+    @PostMapping(value="/createTeam")
     public ResponseEntity<String> createTeam(@RequestBody Team team) {
         try{
             return new ResponseEntity<>(teamServiceImpl.createTeam(team), HttpStatus.CREATED);
@@ -58,32 +65,26 @@ public class AdminController {
 
     }
 
-    @PostMapping(value="createAdmin")
-    public ResponseEntity<String> createAdmin(@RequestBody Admin admin) {
+    @GetMapping(value="/allAdmins")
+    public ResponseEntity<List<Admin>> getAdmins() {
         try{
-            return new ResponseEntity<>(adminServiceImpl.createAdmin(admin), HttpStatus.CREATED);
-        } catch (ExistsException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
+            return new ResponseEntity<>(adminServiceImpl.getAll(), HttpStatus.OK);
+        } catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
-
     }
 
-    @PostMapping(value="createPin")
-    public ResponseEntity<String> createPin(@RequestBody Pin pin) {
+    @PostMapping(value="/createPin")
+    public ResponseEntity<String> createPin(@RequestBody Map<String, String> req) {
         try{
-            return new ResponseEntity<>(pinServiceImpl.createPin(pin), HttpStatus.CREATED);
+            return new ResponseEntity<>(pinServiceImpl.createPin(Type.valueOf(req.get("type")),req.get("company"),req.get("ownerName")), HttpStatus.CREATED);
         }catch (ExistsException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
+        } catch (Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
 
-    @PostMapping(value="createSession")
-    public ResponseEntity<String> createSession(@RequestBody Session session) {
-        try{
-            return new ResponseEntity<>(sessionServiceImpl.createSession(session), HttpStatus.CREATED);
-        }catch (ExistsException e){
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
-        }
 
-    }
+
 }

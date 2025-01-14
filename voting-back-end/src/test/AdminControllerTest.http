@@ -14,3 +14,18 @@ Content-Type: application/json
 GET localhost:8080/auth/allTeams
 
 ###
+POST localhost:8080/auth/createPin
+Content-Type: application/json
+
+{
+  "type": "BIT",
+  "company": "Big Pharma",
+  "ownerName": "Dan"
+}
+###
+GET localhost:8080/auth/allPins
+
+###
+GET localhost:8080/auth/allAdmins
+
+###

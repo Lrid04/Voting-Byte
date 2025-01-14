@@ -14,6 +14,8 @@ public class Pin {
     private Type pinType;
     @Column
     private String ownerName;
+    @Column
+    private String company;
 
     public Pin() {
     }
@@ -48,5 +50,13 @@ public class Pin {
 
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 }
