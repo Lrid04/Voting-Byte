@@ -1,6 +1,6 @@
 package org.votingbackend.models;
 import jakarta.persistence.*;
-import org.votingbackend.enums.Type;
+import org.votingbackend.enums.Category;
 
 @Entity
 public class Team {
@@ -14,7 +14,7 @@ public class Team {
     private String school;
     @Column
     @Enumerated(EnumType.STRING)
-    private Type type;
+    private Category category;
 
     public Team() {
 
@@ -44,11 +44,11 @@ public class Team {
         this.school = school;
     }
 
-    public Type getType() {
-        return type;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setType(Type type) {
-        this.type = type;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

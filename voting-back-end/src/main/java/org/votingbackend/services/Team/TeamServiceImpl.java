@@ -40,7 +40,7 @@ public class TeamServiceImpl implements TeamService {
             Team updatedTeam = teamRepository.findByTeamName(team.getTeamName());
             updatedTeam.setTeamName(team.getTeamName());
             updatedTeam.setSchool(team.getSchool());
-            updatedTeam.setType(team.getType());
+            updatedTeam.setCategory(team.getCategory());
             teamRepository.save(updatedTeam);
             return "Team updated successfully";
         }

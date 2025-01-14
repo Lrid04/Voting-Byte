@@ -6,22 +6,34 @@ POST localhost:8080/auth/createTeam
 Content-Type: application/json
 
 {
-  "teamName": "TestTeam",
-  "school": "TestSchool",
-  "type": "BYTE"
+  "teamName": "Good",
+  "school": "TestSchool2",
+  "category": "COLLEGE"
 }
 ### Test To Return All Teams
 GET localhost:8080/auth/allTeams
 
-### Test To Create Pins To DataBase
+### Test To Create Pins To DataBase for Coach
 POST localhost:8080/auth/createPin
 Content-Type: application/json
 
 {
-  "pinType": "BIT",
-  "company": "Big Pharma",
+  "pinCategory": "BIT",
+  "pinType": "COACH",
+  "company": "Cool School",
   "ownerName": "Barb"
 }
+
+### Test To Create Pins To DataBase for Company
+POST localhost:8080/auth/createPin
+Content-Type: application/json
+
+{
+  "pinType": "COMPANY",
+  "company": "Science Place",
+  "ownerName": "Andrew Workk"
+}
+
 ### Test To Get All Pins
 GET localhost:8080/auth/allPins
 

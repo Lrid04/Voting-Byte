@@ -1,7 +1,9 @@
 package org.votingbackend.models;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
-import org.votingbackend.enums.Type;
+import org.votingbackend.enums.Category;
+import org.votingbackend.enums.PinType;
 
 @Entity
 public class Pin {
@@ -11,7 +13,10 @@ public class Pin {
     @Column(length = 5)
     private String pin;
     @Column
-    private Type pinType;
+    @Nullable
+    private Category pinCategory;
+    @Column
+    private PinType pinType;
     @Column
     private String ownerName;
     @Column
@@ -36,11 +41,21 @@ public class Pin {
         this.pin = pin;
     }
 
-    public Type getPinType() {
+    @Nullable
+    public Category getPinCategory() {
+        return pinCategory;
+    }
+
+    public void setPinCategory(@Nullable Category pinCategory) {
+        this.pinCategory = pinCategory;
+    }
+
+
+    public PinType getPinType() {
         return pinType;
     }
 
-    public void setPinType(Type pinType) {
+    public void setPinType(PinType pinType) {
         this.pinType = pinType;
     }
 
