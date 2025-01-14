@@ -2,19 +2,19 @@ import Link from 'next/link'
 
 export default function NavBar() {
     return (
-        <nav className="border-2 border-black rounded-lg p-5 w-30 fixed left-5 top-20">
+        <nav className="border-2 border-black rounded-lg p-5 w-30">
             <ul>
                 <li className="p-3 flex bg-gray-300 border border-black m-2">
-                    <Link href="/">Home</Link>
+                    <Link href="/admin">Home</Link>
                 </li>
                 <li className="p-3 flex bg-gray-300 border border-black m-2">
-                    <Link href="admin/coaches">Coaches</Link>
+                    <Link href="/admin/addCoach">Coaches</Link>
                 </li>
                 <li className="p-3 flex bg-gray-300 border border-black m-2">
-                    <Link href="admin/companies">Companies</Link>
+                    <Link href="/admin/addCompany">Companies</Link>
                 </li>
                 <li className="p-3 flex bg-gray-300 border border-black m-2">
-                    <Link href="admin/teams">Teams</Link>
+                    <Link href="/admin/addTeam">Teams</Link>
                 </li>
                 <li className="p-3 flex bg-gray-300 border border-black m-2">
                     <Link href="/admin/results">Results</Link>

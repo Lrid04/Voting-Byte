@@ -1,10 +1,5 @@
-<<<<<<< HEAD:voting-front-end/.next/types/app/admin/addTeam/page.ts
 // File: C:\fieldProject\voting\voting-front-end\src\app\admin\addTeam\page.tsx
 import * as entry from '../../../../../src/app/admin/addTeam/page.js'
-=======
-// File: C:\Users\alexc\Voting-Byte\voting-front-end\src\app\page.tsx
-import * as entry from '../../../src/app/page.js'
->>>>>>> origin/alex:voting-front-end/.next/types/app/page.ts
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
 type TEntry = typeof import('../../../../../src/app/admin/addTeam/page.js')

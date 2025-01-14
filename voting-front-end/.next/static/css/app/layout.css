@@ -521,82 +521,29 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
-.fixed {
-  position: fixed;
-}
-.left-5 {
-  left: 1.25rem;
-}
-.top-20 {
-  top: 5rem;
-}
 .m-2 {
   margin: 0.5rem;
 }
 .flex {
   display: flex;
 }
-<<<<<<< HEAD
 .table {
   display: table;
 }
-.grid {
-  display: grid;
-}
-.h-10 {
-  height: 2.5rem;
-}
-.min-h-screen {
-  min-height: 100vh;
-}
-.list-inside {
-  list-style-position: inside;
-}
-.list-decimal {
-  list-style-type: decimal;
-}
-.grid-rows-\[20px_1fr_20px\] {
-  grid-template-rows: 20px 1fr 20px;
-}
-.flex-col {
-  flex-direction: column;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.items-center {
-  align-items: center;
+.flex-row {
+  flex-direction: row;
 }
 .justify-center {
   justify-content: center;
 }
-.justify-items-center {
-  justify-items: center;
+.justify-around {
+  justify-content: space-around;
 }
-.gap-16 {
-  gap: 4rem;
+.justify-evenly {
+  justify-content: space-evenly;
 }
-.gap-2 {
-  gap: 0.5rem;
-}
-.gap-4 {
-  gap: 1rem;
-}
-.gap-6 {
-  gap: 1.5rem;
-}
-.gap-8 {
-  gap: 2rem;
-}
-.rounded {
-  border-radius: 0.25rem;
-}
-.rounded-full {
-  border-radius: 9999px;
-=======
 .rounded-lg {
   border-radius: 0.5rem;
->>>>>>> origin/alex
 }
 .border {
   border-width: 1px;
@@ -608,10 +555,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
-.bg-blue-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));
-}
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
@@ -622,21 +565,21 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-<<<<<<< HEAD
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-=======
->>>>>>> origin/alex
 
 :root {
   --background: #6f2f2f;
@@ -645,8 +588,8 @@ video {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
-    --foreground: #000000;
+    --background: #888787;
+    --foreground: #1b1b1b;
   }
 }
 
