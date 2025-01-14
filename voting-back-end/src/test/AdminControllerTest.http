@@ -6,9 +6,9 @@ POST localhost:8080/auth/createTeam
 Content-Type: application/json
 
 {
-  "teamName": "TestTeam",
-  "school": "TestSchool",
-  "category": "BYTE"
+  "teamName": "Good",
+  "school": "TestSchool2",
+  "category": "COLLEGE"
 }
 ### Test To Return All Teams
 GET localhost:8080/auth/allTeams

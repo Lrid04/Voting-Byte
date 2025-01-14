@@ -533,15 +533,6 @@ video {
 .flex-row {
   flex-direction: row;
 }
-.justify-center {
-  justify-content: center;
-}
-.justify-around {
-  justify-content: space-around;
-}
-.justify-evenly {
-  justify-content: space-evenly;
-}
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -564,10 +555,6 @@ video {
 }
 .p-5 {
   padding: 1.25rem;
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 .text-black {
   --tw-text-opacity: 1;
