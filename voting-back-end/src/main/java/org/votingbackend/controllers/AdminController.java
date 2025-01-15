@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.votingbackend.exceptions.ExistsException;
+import org.votingbackend.exceptions.NotFoundException;
 import org.votingbackend.models.*;
 import org.votingbackend.services.Pin.PinServiceImpl;
 import org.votingbackend.services.Session.SessionServiceImpl;
@@ -16,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(value="*")
+//@CrossOrigin(value="http://localhost:3000")
 public class AdminController {
     private final TeamServiceImpl teamServiceImpl;
     private final AdminServiceImpl adminServiceImpl;
@@ -65,7 +67,24 @@ public class AdminController {
         }catch(ExistsException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
+    }
 
+    @PostMapping(value="/updateTeam")
+    public ResponseEntity<String> updateTeam(@RequestBody Team team) {
+        try{
+            return new ResponseEntity<>(teamServiceImpl.updateTeam(team), HttpStatus.OK);
+        } catch(NotFoundException e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @PostMapping(value="/deleteTeam")
+    public ResponseEntity<String> deleteTeam(@RequestBody Team team) {
+        try{
+            return new ResponseEntity<>(teamServiceImpl.deleteTeam(team), HttpStatus.OK);
+        } catch(NotFoundException e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping(value="/allAdmins")

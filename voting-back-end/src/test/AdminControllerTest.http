@@ -10,6 +10,27 @@ Content-Type: application/json
   "school": "TestSchool2",
   "category": "COLLEGE"
 }
+
+### Update Team Test
+POST localhost:8080/auth/updateTeam
+Content-Type: application/json
+
+{
+  "teamName": "Good",
+  "school": "TestSchool2",
+  "category": "COLLEGE"
+}
+
+### Delete A Team Test
+POST localhost:8080/auth/deleteTeam
+Content-Type: application/json
+
+{
+  "teamName": "Good",
+  "school": "Not Good",
+  "Category": "COLLEGE"
+}
+
 ### Test To Return All Teams
 GET localhost:8080/auth/allTeams
 

@@ -9,7 +9,6 @@ import org.votingbackend.repositories.TeamRepository;
 
 import java.util.List;
 
-//TODO add throws to be caught
 @Service
 public class TeamServiceImpl implements TeamService {
 
