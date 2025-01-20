@@ -1,6 +1,3 @@
-### Test for connection
-GET localhost:8080/auth/test
-
 ### Test For Creating a Team
 POST localhost:8080/auth/createTeam
 Content-Type: application/json

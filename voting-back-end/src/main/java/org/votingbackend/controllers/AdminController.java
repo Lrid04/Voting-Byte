@@ -44,11 +44,6 @@ public class AdminController {
         adminServiceImpl.createAdmin(admin);
     }
 
-    @GetMapping("/test")
-    public String test() {
-        return "test";
-    }
-
     @GetMapping(value="/allTeams")
     public ResponseEntity<List<Team>> getTeams() {
         return new ResponseEntity<>(teamServiceImpl.findAll(), HttpStatus.OK);
@@ -110,10 +105,12 @@ public class AdminController {
 
     @PostMapping(value="/createSession")
     public ResponseEntity<String> createSession(@RequestBody Session session) {
-        try{
+        try {
             return new ResponseEntity<>(sessionServiceImpl.createSession(session), HttpStatus.CREATED);
-        } catch (ExistsException e){
+        } catch (ExistsException e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
         }
     }
+
+
 }
