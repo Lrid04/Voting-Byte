@@ -13,3 +13,8 @@ export interface Pin {
   ownerName: string;
   company: string;
 }
+
+export interface companies{
+  name: string;
+  representatives: string;
+}
