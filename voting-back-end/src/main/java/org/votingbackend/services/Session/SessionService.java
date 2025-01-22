@@ -14,4 +14,5 @@ public interface SessionService {
     List<Session> getAllByExpiresAtBefore(Date expiresAt);
     boolean existsByIp(String ip);
     boolean existsByDeviceId(String deviceId);
+    void clearTable();
 }

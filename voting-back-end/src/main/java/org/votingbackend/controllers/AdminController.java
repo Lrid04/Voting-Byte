@@ -11,6 +11,8 @@ import org.votingbackend.models.*;
 import org.votingbackend.services.Pin.PinServiceImpl;
 import org.votingbackend.services.Session.SessionServiceImpl;
 import org.votingbackend.services.Team.TeamServiceImpl;
+import org.votingbackend.services.Vote.VoteServiceImpl;
+import org.votingbackend.services.VoteItem.VoteItemServiceImpl;
 import org.votingbackend.services.admin.AdminServiceImpl;
 import java.util.List;
 
@@ -23,17 +25,21 @@ public class AdminController {
     private final AdminServiceImpl adminServiceImpl;
     private final PinServiceImpl pinServiceImpl;
     private final SessionServiceImpl sessionServiceImpl;
+    private final VoteServiceImpl voteServiceImpl;
+    private final VoteItemServiceImpl voteItemServiceImpl;
     private final Environment env;
 
 
     @Autowired
     public AdminController(AdminServiceImpl adminServiceImpl, PinServiceImpl pinServiceImpl, TeamServiceImpl teamServiceImpl,
-                           SessionServiceImpl sessionServiceImpl, Environment env) {
+                           SessionServiceImpl sessionServiceImpl, Environment env, VoteServiceImpl voteServiceImpl, VoteItemServiceImpl voteItemServiceImpl) {
         this.env = env;
         this.adminServiceImpl = adminServiceImpl;
         this.pinServiceImpl = pinServiceImpl;
         this.teamServiceImpl = teamServiceImpl;
         this.sessionServiceImpl = sessionServiceImpl;
+        this.voteServiceImpl = voteServiceImpl;
+        this.voteItemServiceImpl = voteItemServiceImpl;
         createAdmin();
     }
 
@@ -112,5 +118,13 @@ public class AdminController {
         }
     }
 
-
+    @PostMapping(value="/clearTables")
+    public ResponseEntity<String> clearTables() {
+        pinServiceImpl.clearTable();
+        sessionServiceImpl.clearTable();
+        teamServiceImpl.clearTable();
+        voteServiceImpl.clearTable();
+        voteItemServiceImpl.clearTable();
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }

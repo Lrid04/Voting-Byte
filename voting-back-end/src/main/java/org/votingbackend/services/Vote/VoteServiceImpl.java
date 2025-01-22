@@ -37,4 +37,9 @@ public class VoteServiceImpl implements VoteService {
     public boolean existsBySessionAndVoteItems(Session session, VoteItems voteItem) {
         return voteRepository.existsBySessionAndVoteItems(session, voteItem);
     }
+
+    @Override
+    public void clearTable(){
+        voteRepository.deleteAll();
+    }
 }

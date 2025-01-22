@@ -12,4 +12,5 @@ public interface TeamService {
     String updateTeam(Team team) throws NotFoundException;
     String deleteTeam(Team team) throws NotFoundException;
     Team findTeamByName(String name);
+    void clearTable();
 }

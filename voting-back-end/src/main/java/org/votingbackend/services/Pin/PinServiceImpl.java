@@ -72,4 +72,9 @@ public class PinServiceImpl implements PinService {
     public List<Pin> findAllByOwnerName(String ownerName) throws NotFoundException {
         return pinRepository.findByOwnerName(ownerName);
     }
+
+    @Override
+    public void clearTable(){
+        pinRepository.deleteAll();
+    }
 }

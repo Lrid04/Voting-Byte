@@ -41,4 +41,9 @@ public class VoteItemServiceImpl implements VoteItemService {
     public List<VoteItems> getAllVoteItemsByTeam(Team team) {
         return voteItemRepository.getAllVoteItemsByTeam(team);
     }
+
+    @Override
+    public void clearTable(){
+        voteItemRepository.deleteAll();
+    }
 }
