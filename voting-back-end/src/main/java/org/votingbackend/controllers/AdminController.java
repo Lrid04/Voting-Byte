@@ -1,5 +1,6 @@
 package org.votingbackend.controllers;
 
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -125,6 +126,37 @@ public class AdminController {
         teamServiceImpl.clearTable();
         voteServiceImpl.clearTable();
         voteItemServiceImpl.clearTable();
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>("Tables Cleared",HttpStatus.OK);
     }
+
+    @PostMapping(value="/clearPins")
+    public ResponseEntity<String> clearPins() {
+        pinServiceImpl.clearTable();
+        return new ResponseEntity<>("Pins Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearSessions")
+    public ResponseEntity<String> clearSessions() {
+        sessionServiceImpl.clearTable();
+        return new ResponseEntity<>("Sessions Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearTeams")
+    public ResponseEntity<String> clearTeams() {
+        teamServiceImpl.clearTable();
+        return new ResponseEntity<>("Teams Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearVotes")
+    public ResponseEntity<String> clearVotes() {
+        voteServiceImpl.clearTable();
+        return new ResponseEntity<>("Votes Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearVoteItems")
+    public ResponseEntity<String> clearVoteItems() {
+        voteItemServiceImpl.clearTable();
+        return new ResponseEntity<>("VoteItems Cleared",HttpStatus.OK);
+    }
+
 }
