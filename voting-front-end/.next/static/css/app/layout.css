@@ -536,8 +536,67 @@ video {
 .flex {
   display: flex;
 }
+<<<<<<< HEAD
 .rounded-lg {
   border-radius: 0.5rem;
+=======
+.table {
+  display: table;
+}
+.grid {
+  display: grid;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.list-inside {
+  list-style-position: inside;
+}
+.list-decimal {
+  list-style-type: decimal;
+}
+.grid-rows-\[20px_1fr_20px\] {
+  grid-template-rows: 20px 1fr 20px;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-items-center {
+  justify-items: center;
+}
+.gap-16 {
+  gap: 4rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+>>>>>>> master
 }
 .border {
   border-width: 1px;
@@ -567,6 +626,17 @@ video {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+<<<<<<< HEAD
+=======
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+>>>>>>> master
 
 :root {
   --background: #6f2f2f;
