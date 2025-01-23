@@ -61,6 +61,15 @@ public class AdminController {
         return new ResponseEntity<>(pinServiceImpl.getAll(), HttpStatus.OK);
     }
 
+    @PostMapping("/deletePin")
+    public ResponseEntity<String> deletePin(@RequestBody Pin pin) {
+        try{
+            return new ResponseEntity<>(pinServiceImpl.deletePin(pin),HttpStatus.OK);
+        } catch (NotFoundException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
+    }
+
 
     @PostMapping(value="/createTeam")
     public ResponseEntity<String> createTeam(@RequestBody Team team) {
