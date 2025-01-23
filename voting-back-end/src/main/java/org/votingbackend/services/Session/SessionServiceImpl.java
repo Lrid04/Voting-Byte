@@ -55,4 +55,9 @@ public class SessionServiceImpl implements SessionService {
     public boolean existsByDeviceId(String deviceId) {
         return sessionRepository.existsByDeviceId(deviceId);
     }
+
+    @Override
+    public void clearTable(){
+        sessionRepository.deleteAll();
+    }
 }

@@ -11,4 +11,5 @@ public interface VoteItemService {
     String createVoteItem(VoteItems voteItems) throws ExistsException;
     int addVoteFields(int voteItemId);
     List<VoteItems> getAllVoteItemsByTeam(Team team);
+    void clearTable();
 }

@@ -71,4 +71,7 @@ Content-Type: application/json
 ### Test To Get All Sessions
 GET localhost:8080/auth/allSessions
 
+### Test Clear Table
+POST localhost:8080/auth/clearTeams
+
 ###

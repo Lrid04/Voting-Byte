@@ -1,5 +1,6 @@
 package org.votingbackend.controllers;
 
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -11,6 +12,8 @@ import org.votingbackend.models.*;
 import org.votingbackend.services.Pin.PinServiceImpl;
 import org.votingbackend.services.Session.SessionServiceImpl;
 import org.votingbackend.services.Team.TeamServiceImpl;
+import org.votingbackend.services.Vote.VoteServiceImpl;
+import org.votingbackend.services.VoteItem.VoteItemServiceImpl;
 import org.votingbackend.services.admin.AdminServiceImpl;
 import java.util.List;
 
@@ -23,17 +26,21 @@ public class AdminController {
     private final AdminServiceImpl adminServiceImpl;
     private final PinServiceImpl pinServiceImpl;
     private final SessionServiceImpl sessionServiceImpl;
+    private final VoteServiceImpl voteServiceImpl;
+    private final VoteItemServiceImpl voteItemServiceImpl;
     private final Environment env;
 
 
     @Autowired
     public AdminController(AdminServiceImpl adminServiceImpl, PinServiceImpl pinServiceImpl, TeamServiceImpl teamServiceImpl,
-                           SessionServiceImpl sessionServiceImpl, Environment env) {
+                           SessionServiceImpl sessionServiceImpl, Environment env, VoteServiceImpl voteServiceImpl, VoteItemServiceImpl voteItemServiceImpl) {
         this.env = env;
         this.adminServiceImpl = adminServiceImpl;
         this.pinServiceImpl = pinServiceImpl;
         this.teamServiceImpl = teamServiceImpl;
         this.sessionServiceImpl = sessionServiceImpl;
+        this.voteServiceImpl = voteServiceImpl;
+        this.voteItemServiceImpl = voteItemServiceImpl;
         createAdmin();
     }
 
@@ -112,5 +119,44 @@ public class AdminController {
         }
     }
 
+    @PostMapping(value="/clearTables")
+    public ResponseEntity<String> clearTables() {
+        pinServiceImpl.clearTable();
+        sessionServiceImpl.clearTable();
+        teamServiceImpl.clearTable();
+        voteServiceImpl.clearTable();
+        voteItemServiceImpl.clearTable();
+        return new ResponseEntity<>("Tables Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearPins")
+    public ResponseEntity<String> clearPins() {
+        pinServiceImpl.clearTable();
+        return new ResponseEntity<>("Pins Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearSessions")
+    public ResponseEntity<String> clearSessions() {
+        sessionServiceImpl.clearTable();
+        return new ResponseEntity<>("Sessions Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearTeams")
+    public ResponseEntity<String> clearTeams() {
+        teamServiceImpl.clearTable();
+        return new ResponseEntity<>("Teams Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearVotes")
+    public ResponseEntity<String> clearVotes() {
+        voteServiceImpl.clearTable();
+        return new ResponseEntity<>("Votes Cleared",HttpStatus.OK);
+    }
+
+    @PostMapping(value="/clearVoteItems")
+    public ResponseEntity<String> clearVoteItems() {
+        voteItemServiceImpl.clearTable();
+        return new ResponseEntity<>("VoteItems Cleared",HttpStatus.OK);
+    }
 
 }
