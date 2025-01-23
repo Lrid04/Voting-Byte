@@ -14,4 +14,5 @@ public interface PinService {
     List<Pin> findAllByPinType(String type) throws NotFoundException;
     List<Pin> findAllByOwnerName(String ownerName) throws NotFoundException;
     void clearTable();
+    String deletePin(Pin pin) throws NotFoundException;
 }
