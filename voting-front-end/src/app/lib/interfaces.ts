@@ -13,3 +13,9 @@ export interface Pin {
   ownerName: string;
   company: string;
 }
+
+export interface companies{
+  pinType: string;
+  company: string;
+  ownerName: string;
+}
