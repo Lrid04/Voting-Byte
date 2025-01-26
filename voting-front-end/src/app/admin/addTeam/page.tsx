@@ -1,8 +1,46 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import { Team } from "../../lib/interfaces";
 
-export default function addTeam() {
+export default function AddTeam() {
+function handleSubmit(event:FormEvent<HTMLFormElement>){
+  event.preventDefault();
+
+  const data = new FormData(event.currentTarget);
+  const teamName: string = data.get('TeamName') as string;
+  const school: string = data.get('school') as string;
+  const division: string = data.get('division') as string; 
+
+  const sendSchool = {
+    "teamName": teamName,
+    "school": school,
+    "category": division
+  }
+  const apiUrl = 'http://localhost:8080/auth/createPin';
+  const options = {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json', 
+      },
+      body: JSON.stringify(sendSchool),
+  };
+  fetch(apiUrl, options)
+        .then(response => {
+        if (!response.ok) {
+            
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json(); 
+        })
+        .then(data => {
+        
+            console.log('Sucess:', data );
+        })
+        .catch(error => {
+        console.error('Error:', error); 
+        });
+      }
+
   const [teams, setTeams] = useState<Team[]>([]);
 
   useEffect(handleFetch, []);
@@ -41,7 +79,7 @@ export default function addTeam() {
           ))}
         </tbody>
       </table>
-      <form>
+      <form id="schoolForm" onSubmit={handleSubmit}>
         <label htmlFor="TeamName">Team Name: </label>
         <br />
         <input type="string" id="TeamName" name="TeamName" />

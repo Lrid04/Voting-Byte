@@ -1,9 +1,8 @@
 "use client";
 import { useState, useEffect, FormEvent } from "react";
 import { Pin } from "../../lib/interfaces";
-import { companies } from "../../lib/interfaces";
 
-export default function addCompany() {
+export default function AddCompany() {
     // You NEED to change this to a useState and update it when there is an error
     // const errorMessage = document.getElementById('errorMessage');
     function handleSubmit(event: FormEvent<HTMLFormElement>){
