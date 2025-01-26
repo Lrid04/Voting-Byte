@@ -126,10 +126,14 @@
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("d2d881adae0cbed6")
 =======
 /******/ 		__webpack_require__.h = () => ("01badb202e06ed60")
 >>>>>>> master
+=======
+/******/ 		__webpack_require__.h = () => ("29590e65b0d98aa2")
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

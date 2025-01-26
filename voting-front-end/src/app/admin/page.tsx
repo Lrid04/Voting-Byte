@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export default function homePage(){
     return(
         <div>
@@ -31,3 +32,14 @@ export default function homePage(){
         
     )
 }
+=======
+
+export default function Page() {
+  return (
+    <div>
+      <h1>Home</h1>
+    </div>
+    
+  );
+} 
+>>>>>>> 081a036 (Full functional nav bar (pull from here))

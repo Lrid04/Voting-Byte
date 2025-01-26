@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:voting-front-end/.next/types/app/page.ts
 // File: C:\Users\alexc\Voting-Byte\voting-front-end\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
@@ -5,6 +6,10 @@ import * as entry from '../../../src/app/page.js'
 // File: C:\Users\kofip\Documents\fieldProject\Voting-Byte\voting-front-end\src\app\admin\page.tsx
 import * as entry from '../../../../src/app/admin/page.js'
 >>>>>>> master:voting-front-end/.next/types/app/admin/page.ts
+=======
+// File: /Users/alexcass/Voting-Byte/voting-front-end/src/app/admin/page.tsx
+import * as entry from '../../../../src/app/admin/page.js'
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
 type TEntry = typeof import('../../../../src/app/admin/page.js')

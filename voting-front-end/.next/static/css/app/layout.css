@@ -537,6 +537,7 @@ video {
   display: flex;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .rounded-lg {
   border-radius: 0.5rem;
 =======
@@ -597,6 +598,10 @@ video {
 .rounded-full {
   border-radius: 9999px;
 >>>>>>> master
+=======
+.rounded-lg {
+  border-radius: 0.5rem;
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
 }
 .border {
   border-width: 1px;
@@ -608,10 +613,13 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
+<<<<<<< HEAD
 .bg-blue-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));
 }
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
@@ -627,6 +635,7 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -637,6 +646,8 @@ video {
   transition-duration: 150ms;
 }
 >>>>>>> master
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
 
 :root {
   --background: #6f2f2f;
