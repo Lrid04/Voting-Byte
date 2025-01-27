@@ -1,13 +1,3 @@
 {
-<<<<<<< HEAD
-  "/admin/page": "app/admin/page.js"
-=======
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/admin/coaches/page": "app/admin/coaches/page.js",
-  "/admin/teams/page": "app/admin/teams/page.js",
-  "/admin/companies/page": "app/admin/companies/page.js",
-  "/admin/results/page": "app/admin/results/page.js"
->>>>>>> 081a036 (Full functional nav bar (pull from here))
+  "/page": "app/page.js"
 }

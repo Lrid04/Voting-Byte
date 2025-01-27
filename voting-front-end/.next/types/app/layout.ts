@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // File: C:\Users\alexc\Voting-Byte\voting-front-end\src\app\layout.tsx
-=======
-// File: C:\Users\kofip\Documents\fieldProject\Voting-Byte\voting-front-end\src\app\layout.tsx
->>>>>>> master
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

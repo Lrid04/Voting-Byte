@@ -178,15 +178,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-<<<<<<< HEAD
-<<<<<<< HEAD
-/******/ 		__webpack_require__.h = () => ("6f97c179355314a3")
-=======
-/******/ 		__webpack_require__.h = () => ("2b88fcc80733d12d")
->>>>>>> master
-=======
-/******/ 		__webpack_require__.h = () => ("51d47f1b028cf71d")
->>>>>>> 081a036 (Full functional nav bar (pull from here))
+/******/ 		__webpack_require__.h = () => ("2f6f36e5eae2bad5")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
