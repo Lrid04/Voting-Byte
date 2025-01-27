@@ -1,8 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import { Pin } from "../../lib/interfaces";
 
-export default function addCoaches() {
+export default function AddCoaches() {
   const [coaches, setCoaches] = useState<Pin[]>();
 
   useEffect(handleFetch, []);
@@ -14,6 +14,44 @@ export default function addCoaches() {
         setCoaches(data);
       })
       .catch((error) => console.error(error));
+  }
+  function handleSubmit(event: FormEvent<HTMLFormElement>){
+    event.preventDefault();
+
+    const data = new FormData(event.currentTarget);
+    const name: string = data.get('name') as string;
+    const school: string = data.get('school') as string;
+    const division: string = data.get('division') as string;
+    const addCoach={
+      "pinCategory": division,
+      "pinType": "COACH",
+      "company": school,
+      "ownerName": name
+    }
+    const apiUrl = 'http://localhost:8080/auth/createPin';
+    const options = {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json', 
+      },
+      body: JSON.stringify(addCoach),
+  };
+  fetch(apiUrl, options)
+  .then(response => {
+  if (!response.ok) {
+      
+      throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json(); 
+  })
+  .then(data => {
+  
+      console.log('Sucess:', data );
+  })
+  .catch(error => {
+  
+  console.error('Error:', error); 
+  });
   }
 
   return (
@@ -46,7 +84,7 @@ export default function addCoaches() {
             ))}
         </tbody>
       </table>
-      <form>
+      <form id="coachForm" onSubmit={handleSubmit}>
         <label htmlFor="name">Name: </label>
         <br />
         <input type="string" id="name" name="name" />
