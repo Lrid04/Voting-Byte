@@ -15,6 +15,7 @@ export default function AddCoaches() {
       })
       .catch((error) => console.error(error));
   }
+
   function handleSubmit(event: FormEvent<HTMLFormElement>){
     event.preventDefault();
 
@@ -22,7 +23,8 @@ export default function AddCoaches() {
     const name: string = data.get('name') as string;
     const school: string = data.get('school') as string;
     const division: string = data.get('division') as string;
-    const addCoach={
+    const addCoach = 
+    {
       "pinCategory": division,
       "pinType": "COACH",
       "company": school,
@@ -35,24 +37,16 @@ export default function AddCoaches() {
       'Content-Type': 'application/json', 
       },
       body: JSON.stringify(addCoach),
+    }
+      fetch(apiUrl, options)
+      .then(response => {
+        if (response.status != 201){
+          console.log("error")
+        }else{
+          console.log("Success")
+        }
+      })
   };
-  fetch(apiUrl, options)
-  .then(response => {
-  if (!response.ok) {
-      
-      throw new Error(`HTTP error! status: ${response.status}`);
-  }
-  return response.json(); 
-  })
-  .then(data => {
-  
-      console.log('Sucess:', data );
-  })
-  .catch(error => {
-  
-  console.error('Error:', error); 
-  });
-  }
 
   return (
     <div>
@@ -94,7 +88,7 @@ export default function AddCoaches() {
         <input type="string" id="school" name="school" />
         <br />
         <label htmlFor="division">Education Division: </label>
-        <select name="divison" id="division">
+        <select name="division" id="division">
           <option value="BIT">Bits</option>
           <option value="BYTE">Bytes</option>
           <option value="COLLEGE">IHCC</option>

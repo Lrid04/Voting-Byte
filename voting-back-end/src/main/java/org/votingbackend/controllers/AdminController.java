@@ -109,8 +109,6 @@ public class AdminController {
             return new ResponseEntity<>(pinServiceImpl.createPin(pin.getPinCategory(), pin.getPinType(), pin.getCompany(), pin.getOwnerName()), HttpStatus.CREATED);
         }catch (ExistsException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
-        } catch (Exception e){
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
 
