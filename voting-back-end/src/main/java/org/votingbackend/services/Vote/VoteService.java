@@ -11,4 +11,5 @@ public interface VoteService {
     List<Votes> getAll();
     String createVote(Votes vote) throws ExistsException;
     boolean existsBySessionAndVoteItems(Session session, VoteItems voteItem);
+    void clearTable();
 }

@@ -42,12 +42,12 @@ public class PinServiceImpl implements PinService {
         pin2.setCompany(company);
         pin2.setOwnerName(ownerName);
         while (true) {
-            String pin = String.valueOf(rand.nextInt(999999));
+            String pin = String.valueOf(rand.nextInt(1000,9999));
             if (!pinRepository.existsByPin(pin)) {
                 pin1.setPin(pin);
                 pinRepository.save(pin1);
                 while (true) {
-                    pin = String.valueOf(rand.nextInt(999999));
+                    pin = String.valueOf(rand.nextInt(1000,9999));
                     if (!pinRepository.existsByPin(pin)) {
                         pin2.setPin(pin);
                         pinRepository.save(pin2);
@@ -71,5 +71,19 @@ public class PinServiceImpl implements PinService {
     @Override
     public List<Pin> findAllByOwnerName(String ownerName) throws NotFoundException {
         return pinRepository.findByOwnerName(ownerName);
+    }
+
+    @Override
+    public void clearTable(){
+        pinRepository.deleteAll();
+    }
+
+    @Override
+    public String deletePin(Pin pin) throws NotFoundException {
+        if (!pinRepository.existsByPin(pin.getPin())) {
+            pinRepository.delete(pin);
+            return "Pin Deleted Successfully";
+        }
+        throw new NotFoundException("Pin Not Found");
     }
 }

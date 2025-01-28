@@ -65,5 +65,10 @@ public class TeamServiceImpl implements TeamService {
             return null;
         }
     }
+
+    @Override
+    public void clearTable(){
+        teamRepository.deleteAll();
+    }
 }
 

@@ -1,3 +1,5 @@
 {
-  "/admin/addCompany/page": "app/admin/addCompany/page.js"
+  "/page": "app/page.js",
+  "/admin/addCoach/page": "app/admin/addCoach/page.js",
+  "/admin/page": "app/admin/page.js"
 }
