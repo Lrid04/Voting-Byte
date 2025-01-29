@@ -16,7 +16,7 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
     "school": school,
     "category": division
   }
-  const apiUrl = 'http://localhost:8080/auth/createPin';
+  const apiUrl = 'http://localhost:8080/auth/';
   const options = {
       method: 'POST',
       headers: {

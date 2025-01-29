@@ -21,10 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/admin/page.js"
     ],
-    "/admin/addCoach/page": [
+    "/api/auth/test/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin/addCoach/page.js"
+      "static/chunks/app/api/auth/test/route.js"
     ]
   }
 }
