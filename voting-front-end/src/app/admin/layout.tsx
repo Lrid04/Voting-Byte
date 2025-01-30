@@ -6,9 +6,9 @@ export default function Layout({
     children: React.ReactNode;
   }>){
   return (
-    <>
+    <div>
       <Navbar />
-      <main>{children}</main>
-    </>
+      <main className="text-white ml-40">{children}</main>
+    </div>
   )
 }

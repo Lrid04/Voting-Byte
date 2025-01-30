@@ -1,19 +1,13 @@
 {
-<<<<<<< HEAD
-  "/page": "app/page.js",
-  "/admin/addCoach/page": "app/admin/addCoach/page.js",
-  "/admin/page": "app/admin/page.js"
-=======
+  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
-<<<<<<< HEAD
-  "/voting/teams/page": "app/voting/teams/page.js"
-=======
-  "/admin/page": "app/admin/page.js",
-  "/admin/coaches/page": "app/admin/coaches/page.js",
+  "/voting/judge/page": "app/voting/judge/page.js",
+  "/voting/teams/page": "app/voting/teams/page.js",
+  "/admin/addTeam/page": "app/admin/addTeam/page.js",
+  "/admin/addCoach/page": "app/admin/addCoach/page.js",
+  "/admin/addCompany/page": "app/admin/addCompany/page.js",
   "/admin/teams/page": "app/admin/teams/page.js",
-  "/admin/companies/page": "app/admin/companies/page.js",
-  "/admin/results/page": "app/admin/results/page.js"
->>>>>>> 081a036 (Full functional nav bar (pull from here))
->>>>>>> alex
+  "/admin/results/page": "app/admin/results/page.js",
+  "/admin/page": "app/admin/page.js"
 }

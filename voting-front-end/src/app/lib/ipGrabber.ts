@@ -1,14 +1,12 @@
 "use client";
 
-import { useState } from "react";
-
 export function getIp() {
-  const [ip, setIp] = useState();
+  let ip = ""
 
   fetch("https://api.ipify.org/?format=json")
     .then((res) => res.json())
     .then((data) => {
-      setIp(data.ip);
+      ip = data.ip
     })
     .catch((error) => console.error(error));
 

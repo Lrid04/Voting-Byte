@@ -1,16 +1,8 @@
-<<<<<<<< HEAD:voting-front-end/.next/types/app/voting/teams/page.ts
-// File: C:\Users\alexc\Voting-Byte\voting-front-end\src\app\voting\teams\page.tsx
+// File: C:\fieldProject\voting\voting-front-end\src\app\voting\teams\page.tsx
 import * as entry from '../../../../../src/app/voting/teams/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
 type TEntry = typeof import('../../../../../src/app/voting/teams/page.js')
-========
-// File: /Users/alexcass/Voting-Byte/voting-front-end/src/app/admin/page.tsx
-import * as entry from '../../../../src/app/admin/page.js'
-import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
-
-type TEntry = typeof import('../../../../src/app/admin/page.js')
->>>>>>>> 081a036 (Full functional nav bar (pull from here)):voting-front-end/.next/types/app/admin/page.ts
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

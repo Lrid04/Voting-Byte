@@ -7,7 +7,7 @@ export default function homePage(){
             </p>
             <h1>Teams Page</h1>
             <p>This is where you will add all of the teams that are signed up for the Byte Jam.
-                You must enter the team name, what school they're from, and what division they are in.
+                You must enter the team name, what school they&apos;re from, and what division they are in.
                 There are three divisions, Bits, Bytes ad IHCC. Bits and bytes are only for high school 
                 teams, and IHCC is only for college teams. You can also remove individual teams, or drop 
                 all of the teams, but you should onl need to do that after Byte Jam is over to put in new teams.
