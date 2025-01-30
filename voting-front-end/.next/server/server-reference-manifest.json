@@ -1,1 +1,5 @@
-{"node":{"0095f1db9b153592ea042c19f27e199529dbc78739":{"workers":{"app/admin/addCompany/page":{"moduleId":"5160","async":false},"app/admin/addCoach/page":{"moduleId":"5160","async":false},"app/admin/addTeam/page":{"moduleId":"5160","async":false},"app/admin/page":{"moduleId":"5160","async":false},"app/admin/results/page":{"moduleId":"5160","async":false},"app/admin/teams/page":{"moduleId":"5160","async":false}},"layer":{"app/admin/addCompany/page":"action-browser","app/admin/addCoach/page":"action-browser","app/admin/addTeam/page":"action-browser","app/admin/page":"action-browser","app/admin/results/page":"action-browser","app/admin/teams/page":"action-browser"}}},"edge":{},"encryptionKey":"jPtRxbSgkKh4F2IXB9gtbfpGM+29dk9CGDMZDlDnpu8="}
+{
+  "node": {},
+  "edge": {},
+  "encryptionKey": "UNYJOJVq4tu3kpopB6ITieU9kak9Og/QB+4rN1QvaeI="
+}
