@@ -126,7 +126,7 @@ public class AdminController {
         }
     }
 
-    @PostMapping(value="/clearTables")
+    @GetMapping(value="/clearTables")
     public ResponseEntity<String> clearTables() {
         pinServiceImpl.clearTable();
         sessionServiceImpl.clearTable();
@@ -136,31 +136,31 @@ public class AdminController {
         return new ResponseEntity<>("Tables Cleared",HttpStatus.OK);
     }
 
-    @PostMapping(value="/clearPins")
+    @GetMapping(value="/clearPins")
     public ResponseEntity<String> clearPins() {
         pinServiceImpl.clearTable();
         return new ResponseEntity<>("Pins Cleared",HttpStatus.OK);
     }
 
-    @PostMapping(value="/clearSessions")
+    @GetMapping(value="/clearSessions")
     public ResponseEntity<String> clearSessions() {
         sessionServiceImpl.clearTable();
         return new ResponseEntity<>("Sessions Cleared",HttpStatus.OK);
     }
 
-    @PostMapping(value="/clearTeams")
+    @GetMapping(value="/clearTeams")
     public ResponseEntity<String> clearTeams() {
         teamServiceImpl.clearTable();
         return new ResponseEntity<>("Teams Cleared",HttpStatus.OK);
     }
 
-    @PostMapping(value="/clearVotes")
+    @GetMapping(value="/clearVotes")
     public ResponseEntity<String> clearVotes() {
         voteServiceImpl.clearTable();
         return new ResponseEntity<>("Votes Cleared",HttpStatus.OK);
     }
 
-    @PostMapping(value="/clearVoteItems")
+    @GetMapping(value="/clearVoteItems")
     public ResponseEntity<String> clearVoteItems() {
         voteItemServiceImpl.clearTable();
         return new ResponseEntity<>("VoteItems Cleared",HttpStatus.OK);
