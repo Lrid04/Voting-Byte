@@ -524,15 +524,51 @@ video {
 .m-2 {
   margin: 0.5rem;
 }
+.m-6 {
+  margin: 1.5rem;
+}
+.m-8 {
+  margin: 2rem;
+}
 .flex {
   display: flex;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> alex
 .table {
   display: table;
 }
 .flex-row {
   flex-direction: row;
 }
+<<<<<<< HEAD
+=======
+.h-60 {
+  height: 15rem;
+}
+.w-60 {
+  width: 15rem;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-20 {
+  gap: 5rem;
+}
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
+>>>>>>> alex
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -542,31 +578,131 @@ video {
 .border-2 {
   border-width: 2px;
 }
+<<<<<<< HEAD
+.border-4 {
+  border-width: 4px;
+}
+.border-8 {
+  border-width: 8px;
+}
+.border-b-8 {
+  border-bottom-width: 8px;
+}
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.border-gray-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
+}
+<<<<<<< HEAD
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
+>>>>>>> alex
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
+.bg-cyan-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 94 117 / var(--tw-bg-opacity, 1));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+=======
+>>>>>>> 087edce (wasted a bit of time on the uuid to just end up scrapping it, the default home page is essentialy done)
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+<<<<<<< HEAD
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+=======
 .p-3 {
   padding: 0.75rem;
 }
 .p-5 {
   padding: 1.25rem;
 }
+<<<<<<< HEAD
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
+>>>>>>> alex
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+<<<<<<< HEAD
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+=======
+<<<<<<< HEAD
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+=======
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
+>>>>>>> alex
 
 :root {
   --background: #6f2f2f;
@@ -575,8 +711,13 @@ video {
 
 @media (prefers-color-scheme: dark) {
   :root {
+<<<<<<< HEAD
     --background: #888787;
     --foreground: #1b1b1b;
+=======
+    --background: #030712; /*background color around each page*/
+    --foreground: #000000;
+>>>>>>> alex
   }
 }
 
@@ -584,6 +725,6 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  margin: 2%; /*might remove later*/
+  margin: 4%; /*might remove later*/
 }
 

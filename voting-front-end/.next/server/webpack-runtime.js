@@ -47,6 +47,11 @@
 /******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/amd options */
+/******/ 	(() => {
+/******/ 		__webpack_require__.amdO = {};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -125,7 +130,15 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("a4c5338b26a792ba")
+=======
+<<<<<<< HEAD
+/******/ 		__webpack_require__.h = () => ("c0f7eeebb4c08412")
+=======
+/******/ 		__webpack_require__.h = () => ("29590e65b0d98aa2")
+>>>>>>> 081a036 (Full functional nav bar (pull from here))
+>>>>>>> alex
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

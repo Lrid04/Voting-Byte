@@ -32,6 +32,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "alex",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/fieldProject/voting/voting-back-end",
     "node.js.detected.package.eslint": "true",
@@ -39,6 +40,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -46,8 +50,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -63,6 +67,9 @@
       <workItem from="1732040102834" duration="1352000" />
       <workItem from="1732073089397" duration="276000" />
       <workItem from="1732114863031" duration="149000" />
+      <workItem from="1737566118621" duration="103000" />
+      <workItem from="1737566234651" duration="32000" />
+      <workItem from="1737566272983" duration="138000" />
     </task>
     <task id="LOCAL-00001" summary="Hope?">
       <option name="closed" value="true" />
@@ -94,7 +101,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/alex" />
                       </list>
                     </value>
                   </entry>

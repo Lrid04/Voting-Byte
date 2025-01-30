@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\fieldProject\voting\voting-front-end\src\app\admin\layout.tsx
+=======
+// File: /Users/alexcass/Voting-Byte/voting-front-end/src/app/admin/layout.tsx
+>>>>>>> alex
 import * as entry from '../../../../src/app/admin/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
