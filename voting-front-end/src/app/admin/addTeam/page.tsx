@@ -2,6 +2,7 @@
 import { useState, useEffect, FormEvent } from "react";
 import { Team } from "../../lib/interfaces";
 
+
 export default function AddTeam() {
 function handleSubmit(event:FormEvent<HTMLFormElement>){
   event.preventDefault();
@@ -25,21 +26,14 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
       body: JSON.stringify(sendSchool),
   };
   fetch(apiUrl, options)
-        .then(response => {
-        if (!response.ok) {
-            
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json(); 
-        })
-        .then(data => {
-        
-            console.log('Sucess:', data );
-        })
-        .catch(error => {
-        console.error('Error:', error); 
-        });
-      }
+  .then(response => {
+  if (response.status != 201){
+      console.log("error")
+  }else{
+      console.log("Success")
+  }
+  })
+};
 
   const [teams, setTeams] = useState<Team[]>([]);
 
@@ -52,6 +46,16 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
         setTeams(data);
       })
       .catch((error) => console.error(error));
+  }
+  function deleteFn(){
+    fetch("http://localhost:8080/auth/clearTeams")
+    .then((res) => {
+      if (res.ok){
+        console.log('Sucess')
+      }else{
+        console.log("An error happened try again "); 
+      }
+    });
   }
 
   return (
@@ -96,6 +100,7 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
         </select>
         <button type="submit">Add Team</button>
       </form>
+          <button onClick={deleteFn}>Clear Teams</button>
     </div>
   );
 }

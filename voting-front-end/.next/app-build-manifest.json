@@ -21,10 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/admin/page.js"
     ],
-    "/admin/addCoach/page": [
+    "/admin/addTeam/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin/addCoach/page.js"
+      "static/chunks/app/admin/addTeam/page.js"
     ]
   }
 }

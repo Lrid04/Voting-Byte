@@ -2,6 +2,7 @@
 import { useState, useEffect, FormEvent } from "react";
 import { Pin } from "../../lib/interfaces";
 
+
 export default function AddCoaches() {
   const [coaches, setCoaches] = useState<Pin[]>();
 
@@ -47,6 +48,16 @@ export default function AddCoaches() {
         }
       })
   };
+  function deleteFn(){
+    fetch("http://localhost:8080/auth/clearPins")
+    .then((res) => {
+    if (res.ok){
+        console.log('Sucess')
+    }else{
+        console.log("An error happened try again "); 
+    }
+    });
+}
 
   return (
     <div>
@@ -94,6 +105,7 @@ export default function AddCoaches() {
           <option value="COLLEGE">IHCC</option>
         </select>
         <button type="submit">Add Name</button>
+        <button onClick={deleteFn}>Clear Coaches</button>
       </form>
     </div>
   );
