@@ -7,6 +7,10 @@ import Link from 'next/link'
 export default function Page() {
   const ip = getIp();
 
+  function GiveAdmin(){
+    fetch("api/auth/test")
+  }
+
   return (
     <div className="border-8 border-gray-800 p-4 bg-gray-200 flex flex-col items-center justify-center">
       <h1 className="text-4xl text-center border-b-8 border-gray-800 p-8 m-8">
@@ -44,6 +48,7 @@ export default function Page() {
         </Link>
       </div>
       <Footer></Footer>
+      <button onClick={GiveAdmin}>Click For Admin</button>
     </div>
   );
 }

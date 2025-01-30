@@ -1,6 +1,10 @@
 {
   "polyfillFiles": [
+<<<<<<< HEAD
     "static/chunks/polyfills-42372ed130431b0a.js"
+=======
+    "static/chunks/polyfills.js"
+>>>>>>> adminAdd
   ],
   "devFiles": [],
   "ampDevFiles": [],
@@ -16,6 +20,7 @@
   ],
   "rootMainFilesTree": {},
   "pages": {
+<<<<<<< HEAD
     "/_app": [
       "static/chunks/webpack-a629f7f3a5517537.js",
       "static/chunks/framework-0d635b52335dc518.js",
@@ -28,6 +33,9 @@
       "static/chunks/main-4084c69bfdc260b1.js",
       "static/chunks/pages/_error-9b7125ad1a1e68fa.js"
     ]
+=======
+    "/_app": []
+>>>>>>> adminAdd
   },
   "ampFirstPages": []
 }
