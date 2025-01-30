@@ -1,18 +1,15 @@
 {
-<<<<<<< HEAD
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/route": "app/api/auth/route.js",
+  "/api/auth/test/route": "app/api/auth/test/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/voting/judge/page": "app/voting/judge/page.js",
   "/voting/teams/page": "app/voting/teams/page.js",
-  "/admin/addTeam/page": "app/admin/addTeam/page.js",
-  "/admin/addCoach/page": "app/admin/addCoach/page.js",
   "/admin/addCompany/page": "app/admin/addCompany/page.js",
-  "/admin/teams/page": "app/admin/teams/page.js",
+  "/admin/addCoach/page": "app/admin/addCoach/page.js",
+  "/admin/addTeam/page": "app/admin/addTeam/page.js",
+  "/admin/page": "app/admin/page.js",
   "/admin/results/page": "app/admin/results/page.js",
-=======
-  "/api/auth/test/route": "app/api/auth/test/route.js",
-  "/page": "app/page.js",
->>>>>>> adminAdd
-  "/admin/page": "app/admin/page.js"
+  "/admin/teams/page": "app/admin/teams/page.js"
 }
