@@ -2,6 +2,7 @@
 import { useState, useEffect, FormEvent } from "react";
 import { Pin } from "../../lib/interfaces";
 
+
 export default function AddCompany() {
     // You NEED to change this to a useState and update it when there is an error
     // const errorMessage = document.getElementById('errorMessage');
@@ -27,21 +28,13 @@ export default function AddCompany() {
         };
         fetch(apiUrl, options)
         .then(response => {
-        if (!response.ok) {
-            // errorMessage.textContent = `HTTP error! status: ${response.status}`;
-            throw new Error(`HTTP error! status: ${response.status}`);
+        if (response.status != 201){
+            console.log("error")
+        }else{
+            console.log("Success")
         }
-        return response.json(); 
         })
-        .then(data => {
-        
-            console.log('Sucess:', data );
-        })
-        .catch(error => {
-        // errorMessage.textContent = 'An error occurred. Please try again.'
-        console.error('Error:', error); 
-        });
-    }
+    };
 
     const [company, setCompany] = useState<Pin[]>();
 
@@ -54,6 +47,16 @@ export default function AddCompany() {
         setCompany(data);
     })
     .catch((error) => console.error(error));
+}
+function deleteFn(){
+    fetch("http://localhost:8080/auth/clearPins")
+    .then((res) => {
+    if (res.ok){
+        console.log('Sucess')
+    }else{
+        console.log("An error happened try again "); 
+    }
+    });
 }
 
 return (
@@ -94,6 +97,7 @@ return (
                 <label htmlFor="attendee">Company representative: </label><br/>
                 <input type="string" id="attendee" name="attendee"/><br/>
         <button type="submit">Add Company</button>
+        <button onClick={deleteFn}>Clear Companies</button>
     </form>
             
     </div>
