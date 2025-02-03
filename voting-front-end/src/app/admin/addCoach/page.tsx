@@ -2,7 +2,6 @@
 import { useState, useEffect, FormEvent } from "react";
 import { Pin } from "../../lib/interfaces";
 
-
 export default function AddCoaches() {
   const [coaches, setCoaches] = useState<Pin[]>();
 
@@ -17,47 +16,47 @@ export default function AddCoaches() {
       .catch((error) => console.error(error));
   }
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>){
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const data = new FormData(event.currentTarget);
-    const name: string = data.get('name') as string;
-    const school: string = data.get('school') as string;
-    const division: string = data.get('division') as string;
-    const addCoach = 
-    {
-      "pinCategory": division,
-      "pinType": "COACH",
-      "company": school,
-      "ownerName": name
-    }
-    const apiUrl = 'http://localhost:8080/auth/createPin';
+    const name: string = data.get("name") as string;
+    const school: string = data.get("school") as string;
+    const division: string = data.get("division") as string;
+    const addCoach = {
+      pinCategory: division,
+      pinType: "COACH",
+      company: school,
+      ownerName: name,
+    };
+    const apiUrl = "http://localhost:8080/auth/createPin";
     const options = {
-      method: 'POST',
+      method: "POST",
       headers: {
-      'Content-Type': 'application/json', 
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(addCoach),
-    }
-      fetch(apiUrl, options)
-      .then(response => {
-        if (response.status != 201){
-          console.log("error")
-        }else{
-          console.log("Success")
-        }
-      })
-  };
-  function deleteFn(){
+    };
+    fetch(apiUrl, options)
+    .then((response) => {
+      if (response.status != 201) {
+        console.log("error");
+      } else {
+        console.log("Success");
+      }
+    });
+  }
+
+  function deleteFn() {
     fetch("http://localhost:8080/auth/clearPins")
     .then((res) => {
-    if (res.ok){
-        console.log('Sucess')
-    }else{
-        console.log("An error happened try again "); 
-    }
+      if (res.ok) {
+        console.log("Sucess");
+      } else {
+        console.log("An error happened try again ");
+      }
     });
-}
+  }
 
   return (
     <div>

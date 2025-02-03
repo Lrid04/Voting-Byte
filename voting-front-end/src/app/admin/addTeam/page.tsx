@@ -47,6 +47,7 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
       })
       .catch((error) => console.error(error));
   }
+  
   function deleteFn(){
     fetch("http://localhost:8080/auth/clearTeams")
     .then((res) => {
