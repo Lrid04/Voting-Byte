@@ -1,5 +1,4 @@
-import { error } from "console";
-
+"use client"
 export default function Results(){
 
   function deleteFn(){
@@ -8,7 +7,7 @@ export default function Results(){
       if (res.ok){
         console.log('Sucess')
       }else{
-        console.log("Error: ", error); 
+        console.log("Error: "); 
       }
     });
   }
