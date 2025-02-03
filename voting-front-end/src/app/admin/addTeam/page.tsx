@@ -17,7 +17,7 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
     "school": school,
     "category": division
   }
-  const apiUrl = 'http://localhost:8080/auth/';
+  const apiUrl = 'http://localhost:8080/auth/createTeam';
   const options = {
       method: 'POST',
       headers: {
