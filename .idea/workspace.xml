@@ -7,6 +7,239 @@
     <list default="true" id="7893ebf5-01d6-42a7-b728-3812cd95ea0b" name="Changes" comment="Hope?">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/app-build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/app-build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development-fallback/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development-fallback/0.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development-fallback/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development-fallback/index.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development-fallback/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development-fallback/index.pack.gz.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/0.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/1.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/2.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/index.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/client-development/index.pack.gz.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/0.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/1.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/2.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/index.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/cache/webpack/server-development/index.pack.gz.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app-paths-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app-paths-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/_not-found/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app/_not-found/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/_not-found/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app/_not-found/page_client-reference-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/coaches/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/coaches/page_client-reference-manifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/companies/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/companies/page_client-reference-manifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/page_client-reference-manifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/results/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/results/page_client-reference-manifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/teams/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/admin/teams/page_client-reference-manifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/favicon.ico/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app/favicon.ico/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app/page_client-reference-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/voting/teams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/voting/teams/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app/voting/teams/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/app/voting/teams/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/app/voting/teams/page_client-reference-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/middleware-build-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/next-font-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/next-font-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/next-font-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/next-font-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/vendor-chunks/@swc.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/vendor-chunks/@swc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/vendor-chunks/next.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/vendor-chunks/next.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/server/webpack-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/server/webpack-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app-pages-internals.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app-pages-internals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/_not-found/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/_not-found/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/admin/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/admin/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/admin/teams/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/voting/teams/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/app/voting/teams/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/main-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/main-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/css/app/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/css/app/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/0832f57c7479cb1b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/0adac10cc0c982c0.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/0c5915c5561798df.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/0ce163a85030951f.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/100c026837dc3109.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/148195f6e0f09b4a.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/15bfffab95326bd9.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/165fa02315b2768e.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/168b3b4c2ccd96e4.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/1c86044e33c8afeb.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/1ee1dc0d00437067.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/2d0d020a8336f1a2.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/398d4574e5bb0e7c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/3a5b6828693e472c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/42eacf02e78c09a8.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/46692aae391c67ad.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/4cf49e6414e2c4f1.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/4f300a8ac055c1eb.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/510b0a183aed6987.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/5147ba3bacea7c03.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/566e93d975321818.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/580942580ebcd588.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/5e130431d975ade8.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/5fb6693d18978e80.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/60cc7357c207f0f2.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/64ebb9f44e901348.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/679e4d1123f0bf16.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/6b79312f99d0faed.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/77668f1780e40db0.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/800ebc0ccd2ac430.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/8103505a885e8e2c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/8373d90813139f9e.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/8785d289e5687d64.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/8cdd934c3daf5d37.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/93a8806c3b725a65.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/9af3f4736a0a6104.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/9c0e78a87e2da13e.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/a09d7d9ee4bc31f9.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/a2034c024561d970.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/abcbd09d0c0ad115.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/abce8a29d082aa94.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/admin/layout.679e4d1123f0bf16.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/admin/layout.fee809f09567f89b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.0832f57c7479cb1b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.0adac10cc0c982c0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.0c5915c5561798df.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.0ce163a85030951f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.100c026837dc3109.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.148195f6e0f09b4a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.15bfffab95326bd9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.165fa02315b2768e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.2d0d020a8336f1a2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.398d4574e5bb0e7c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.3a5b6828693e472c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.42eacf02e78c09a8.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.46692aae391c67ad.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.4cf49e6414e2c4f1.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.4f300a8ac055c1eb.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.510b0a183aed6987.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.5147ba3bacea7c03.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.566e93d975321818.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.580942580ebcd588.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.5e130431d975ade8.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.5fb6693d18978e80.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.60cc7357c207f0f2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.64ebb9f44e901348.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.679e4d1123f0bf16.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.6b79312f99d0faed.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.77668f1780e40db0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.800ebc0ccd2ac430.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.8103505a885e8e2c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.8373d90813139f9e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.8785d289e5687d64.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.8cdd934c3daf5d37.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.93a8806c3b725a65.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.9c0e78a87e2da13e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.a09d7d9ee4bc31f9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.abcbd09d0c0ad115.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.abce8a29d082aa94.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.b6b66731b864ff20.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.c2d7e71bab616a3b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.c435f1f4f5f9d433.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.c6275fe6a992390c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.d6af01bf42712060.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.e5522dabc201189b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.e57775cabbfab5cf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.e6f7b4786ec3f610.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.ee32bc73a049cd0c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.ef54973ef0fd09e4.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.f3df529b6215569f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.fb836ada2a0d0062.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/layout.fee809f09567f89b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/page.1c86044e33c8afeb.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/page.679e4d1123f0bf16.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/app/page.fee809f09567f89b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/b6b66731b864ff20.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/bf61617fb6ab5cc0.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/c1224e1677ddbee0.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/c2d7e71bab616a3b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/c435f1f4f5f9d433.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/c6275fe6a992390c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/d6af01bf42712060.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/e1990d9b1e6daba6.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/e5522dabc201189b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/e57775cabbfab5cf.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/e6f7b4786ec3f610.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/e8d496ea98818d37.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/ee32bc73a049cd0c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/ef54973ef0fd09e4.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/f062720db9f3a3f7.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/f3df529b6215569f.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/fb836ada2a0d0062.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/fee809f09567f89b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.0832f57c7479cb1b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.0adac10cc0c982c0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.0c5915c5561798df.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.0ce163a85030951f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.100c026837dc3109.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.148195f6e0f09b4a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.15bfffab95326bd9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.165fa02315b2768e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.168b3b4c2ccd96e4.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.1c86044e33c8afeb.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.1ee1dc0d00437067.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.2d0d020a8336f1a2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.398d4574e5bb0e7c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.3a5b6828693e472c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.42eacf02e78c09a8.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.46692aae391c67ad.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.4cf49e6414e2c4f1.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.4f300a8ac055c1eb.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.510b0a183aed6987.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.5147ba3bacea7c03.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.566e93d975321818.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.580942580ebcd588.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.5e130431d975ade8.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.5fb6693d18978e80.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.60cc7357c207f0f2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.64ebb9f44e901348.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.679e4d1123f0bf16.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.6b79312f99d0faed.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.77668f1780e40db0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.800ebc0ccd2ac430.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.8103505a885e8e2c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.8373d90813139f9e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.8785d289e5687d64.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.8cdd934c3daf5d37.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.93a8806c3b725a65.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.9af3f4736a0a6104.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.9c0e78a87e2da13e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.a09d7d9ee4bc31f9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.a2034c024561d970.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.abcbd09d0c0ad115.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.abce8a29d082aa94.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.b6b66731b864ff20.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.bf61617fb6ab5cc0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.c1224e1677ddbee0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.c2d7e71bab616a3b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.c435f1f4f5f9d433.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.c6275fe6a992390c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.d6af01bf42712060.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.e1990d9b1e6daba6.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.e5522dabc201189b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.e57775cabbfab5cf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.e6f7b4786ec3f610.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.e8d496ea98818d37.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.ee32bc73a049cd0c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.ef54973ef0fd09e4.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.f062720db9f3a3f7.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.f3df529b6215569f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.fb836ada2a0d0062.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/static/webpack/webpack.fee809f09567f89b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/trace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/types/app/admin/layout.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/types/app/admin/page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/types/app/layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/types/app/layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/types/app/page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/types/app/page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/.next/types/app/voting/teams/page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/.next/types/app/voting/teams/page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting-front-end/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/voting-front-end/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +267,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "alex",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/fieldProject/voting/voting-back-end",
+    "last_opened_file_path": "/Users/alexcass/Voting-Byte",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -50,8 +283,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -70,6 +303,7 @@
       <workItem from="1737566118621" duration="103000" />
       <workItem from="1737566234651" duration="32000" />
       <workItem from="1737566272983" duration="138000" />
+      <workItem from="1738595007374" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="Hope?">
       <option name="closed" value="true" />

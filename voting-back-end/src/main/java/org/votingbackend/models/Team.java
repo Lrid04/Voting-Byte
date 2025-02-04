@@ -2,6 +2,7 @@ package org.votingbackend.models;
 import jakarta.persistence.*;
 import org.votingbackend.enums.Type;
 
+
 @Entity
 public class Team {
     @Id

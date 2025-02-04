@@ -6,11 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-<<<<<<<< HEAD:voting-front-end/.next/static/chunks/app/voting/teams/page.js
 (self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["app/voting/teams/page"],{
-========
-(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["app/admin/page"],{
->>>>>>>> 081a036 (Full functional nav bar (pull from here)):voting-front-end/.next/static/chunks/app/admin/page.js
 
 /***/ "(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=false!":
 /*!*******************************************************************************************************!*\

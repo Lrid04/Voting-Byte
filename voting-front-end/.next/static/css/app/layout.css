@@ -1,6 +1,6 @@
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/app/layout.tsx","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'geistSans';
 src: url(/_next/static/media/4473ecc91f70f139-s.p.woff) format('woff');
@@ -11,9 +11,9 @@ font-weight: 100 900;
 }.__variable_1e4310 {--font-geist-sans: 'geistSans', 'geistSans Fallback'
 }
 
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/app/layout.tsx","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'geistMono';
 src: url(/_next/static/media/463dafcda517f24f-s.p.woff) format('woff');
@@ -542,7 +542,6 @@ video {
 .flex {
   display: flex;
 }
-<<<<<<< HEAD
 .table {
   display: table;
 }
@@ -570,8 +569,6 @@ video {
 .gap-20 {
   gap: 5rem;
 }
-=======
->>>>>>> 081a036 (Full functional nav bar (pull from here))
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -581,7 +578,6 @@ video {
 .border-2 {
   border-width: 2px;
 }
-<<<<<<< HEAD
 .border-4 {
   border-width: 4px;
 }
@@ -591,45 +587,22 @@ video {
 .border-b-8 {
   border-bottom-width: 8px;
 }
-=======
->>>>>>> 081a036 (Full functional nav bar (pull from here))
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
-<<<<<<< HEAD
 .border-gray-800 {
   --tw-border-opacity: 1;
   border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
 }
-<<<<<<< HEAD
-=======
->>>>>>> 081a036 (Full functional nav bar (pull from here))
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
-}
-.bg-cyan-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 94 117 / var(--tw-bg-opacity, 1));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-=======
->>>>>>> 087edce (wasted a bit of time on the uuid to just end up scrapping it, the default home page is essentialy done)
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
-=======
->>>>>>> 081a036 (Full functional nav bar (pull from here))
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
-<<<<<<< HEAD
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
@@ -672,24 +645,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
-=======
-.p-3 {
-  padding: 0.75rem;
-}
-.p-5 {
-  padding: 1.25rem;
-}
->>>>>>> 081a036 (Full functional nav bar (pull from here))
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-<<<<<<< HEAD
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-=======
->>>>>>> 081a036 (Full functional nav bar (pull from here))
 
 :root {
   --background: #6f2f2f;
