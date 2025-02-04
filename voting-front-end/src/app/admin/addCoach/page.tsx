@@ -63,7 +63,7 @@ export default function AddCoaches() {
       <table>
         <thead>
           <tr>
-            <th> Name</th>
+            <th>Name</th>
             <th>School</th>
             <th>Division</th>
             <th>Pin</th>
