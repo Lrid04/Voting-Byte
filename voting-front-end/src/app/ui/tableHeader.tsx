@@ -1,29 +1,20 @@
-import { Document, Page, Text, View } from "@react-pdf/renderer";
+"use client";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import { Table, TR, TH, TD } from "@ag-media/react-pdf-table";
 
-export default function TableDoc() {
+export default async function TableDoc() {
   return (
-    <Document>
-      <Page>
-        <View >
-            
-          <View>
-            <Text>Name</Text>
-          </View>
-
-          <View>
-            <Text>School</Text>
-          </View>
-
-          <View>
-            <Text>Division</Text>
-          </View>
-
-          <View>
-            <Text>Pin</Text>
-          </View>
-
-        </View>
-      </Page>
-    </Document>
+    <div>
+      <Table>
+        <TH>
+          
+        </TH>
+      </Table>
+      <PDFDownloadLink document={<p>II</p>} fileName="test.pdf">
+        <div>
+          <span>Download</span>
+        </div>
+      </PDFDownloadLink>
+    </div>
   );
 }

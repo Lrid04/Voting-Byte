@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ag-media/react-pdf-table": "^2.0.1",
     "@react-pdf/renderer": "^4.1.6",
     "file-saver": "^2.0.5",
     "next": "15.0.0",
