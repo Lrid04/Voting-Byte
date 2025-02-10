@@ -548,8 +548,14 @@ video {
 .grid {
   display: grid;
 }
+.h-28 {
+  height: 7rem;
+}
 .h-60 {
   height: 15rem;
+}
+.w-28 {
+  width: 7rem;
 }
 .w-60 {
   width: 15rem;

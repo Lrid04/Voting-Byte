@@ -1,3 +1,8 @@
+/**
+ * @author Alex Cassady
+ * A UI element made to make navigation faster on the admin page
+ */
+
 import Link from 'next/link'
 
 export default function NavBar() {
