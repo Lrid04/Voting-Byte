@@ -38,9 +38,8 @@ public class voteController {
         return new ResponseEntity<>(voteServiceImpl.getAll(), HttpStatus.OK);
     }
 
-    @PostMapping
-    public
-    ResponseEntity<?> castVote(@RequestBody VoteItems voteItems) {
+    @PostMapping(value = "/castVote")
+    public ResponseEntity<?> castVote(@RequestBody VoteItems voteItems) {
 
         Optional<Team> teamOptional = teamRepository.findById(voteItems.getTeam().getTeamId());
         if (teamOptional.isEmpty()) {
@@ -58,7 +57,7 @@ public class voteController {
         return new ResponseEntity<>("Vote submitted successfully.", HttpStatus.OK);
     }
 
-    @GetMapping("/results/{teamId}")
+    @GetMapping(value = "/results/{teamId}")
     public ResponseEntity<?> getVoteResults(@PathVariable Integer teamId) {
         Optional<Team> teamOptional = teamRepository.findById(teamId);
         if (teamOptional.isEmpty()) {
