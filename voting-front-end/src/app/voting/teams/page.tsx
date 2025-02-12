@@ -42,13 +42,18 @@ export default function TeamsPage() {
       </Link>
 
       <h1>Teams</h1>
-      <ul>
-        {teams.map((team) => (
-          <li key={team.teamId}>
-            {team.teamName} - {team.school} ({team.type})
-          </li>
-        ))}
-      </ul>
+
+      <Link href="./votes" className="flex flex-col items-center border-4 border-gray-800 p-4 bg-gray-200">
+        <ul>
+          {teams.map((team) => (
+            <li key={team.teamId}>
+              <Link href={`/team/${team.teamId}`}>
+                {team.teamName}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Link>
     </div>
   );
 }

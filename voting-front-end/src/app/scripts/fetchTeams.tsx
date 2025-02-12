@@ -3,9 +3,10 @@
  * @returns A json of the teams, if nothing is found it returns and empty array to prevent crashing on the front end.
  */
 
+
 export async function fetchTeams() {
   try {
-      const res = await fetch("http://localhost:8080/teams");
+      const res = await fetch("http://localhost:8080/getTeams");
 
       if (!res.ok) {
           const errorMessage = await res.text();

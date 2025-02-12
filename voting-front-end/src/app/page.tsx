@@ -1,3 +1,11 @@
+/**
+ * @author Alex Cassady 
+ * The defualt page every user should see when voting. The page functions very basically, with four differnt buttons with each occupation.
+ * Each image is just a temporary placeholder until it uses copyright free svg files. This page also calls the users Internet Protocol but
+ * is unused until further notice. Adjust as needed.
+ */
+
+
 import NavBar from "./ui/navbar"
 import { getIp } from "./scripts/ipGrabber";
 import Footer from "./ui/footer";
