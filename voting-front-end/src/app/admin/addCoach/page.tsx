@@ -1,9 +1,11 @@
 "use client";
 import { useState, useEffect, FormEvent } from "react";
 import { Pin } from "../../lib/interfaces";
+import PdfButton from "@/app/ui/pdfButton";
 
 export default function AddCoaches() {
   const [coaches, setCoaches] = useState<Pin[]>();
+  const headings = ["School", "Name", "Division", "Pin"]
 
   useEffect(handleFetch, []);
 
@@ -60,35 +62,35 @@ export default function AddCoaches() {
 
   return (
     <div>
-      <table>
+      <table className="border-collapse border border-gray-800 table-auto text-center">
         <thead>
           <tr>
-            <th> Name</th>
-            <th>School</th>
-            <th>Division</th>
-            <th>Pin</th>
+            <th className="bg-gray-200 px-4 py-2 border">School</th>
+            <th className="bg-gray-200 px-4 py-2 border">Name</th>
+            <th className="bg-gray-200 px-4 py-2 border">Division</th>
+            <th className="bg-gray-200 px-4 py-2 border">Pin</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Angela Conrad</td>
-            <td>Keota</td>
-            <td>Bits</td>
-            <td>AN2b1b</td>
+            <td className="bg-gray-200 px-4 py-2 border">Keota</td>
+            <td className="bg-gray-200 px-4 py-2 border">Angela Conrad</td>
+            <td className="bg-gray-200 px-4 py-2 border">Bits</td>
+            <td className="bg-gray-200 px-4 py-2 border">AN2b1b</td>
           </tr>
           {coaches
             ?.filter((c) => c.pinType == "COACH")
             .map((coach) => (
               <tr key={coach.pinId}>
-                <td>{coach.ownerName}</td>
-                <td>{coach.company}</td>
-                <td>{coach.pinCategory}</td>
-                <td>{coach.pin}</td>
+                <td className="bg-gray-200 px-4 py-2 border">{coach.company}</td>
+                <td className="bg-gray-200 px-4 py-2 border">{coach.ownerName}</td>
+                <td className="bg-gray-200 px-4 py-2 border">{coach.pinCategory}</td>
+                <td className="bg-gray-200 px-4 py-2 border">{coach.pin}</td>
               </tr>
             ))}
         </tbody>
       </table>
-      <form id="coachForm" onSubmit={handleSubmit}>
+      <form id="coachForm" onSubmit={handleSubmit} className="w-fit h-fit bg-gray-200 mt-10">
         <label htmlFor="name">Name: </label>
         <br />
         <input type="string" id="name" name="name" />
@@ -103,9 +105,11 @@ export default function AddCoaches() {
           <option value="BYTE">Bytes</option>
           <option value="COLLEGE">IHCC</option>
         </select>
+        <br />
         <button type="submit">Add Name</button>
-        <button onClick={deleteFn}>Clear Coaches</button>
       </form>
+      <button onClick={deleteFn}>Clear Coaches</button>
+      {coaches != undefined && <PdfButton headings={headings} tableContent={coaches}/>}
     </div>
   );
 }

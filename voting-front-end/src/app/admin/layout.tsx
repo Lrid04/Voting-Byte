@@ -23,7 +23,7 @@ export default function Layout({
   return (
     <div>
       <Navbar />
-      <main className="text-white ml-40">{children}</main>
+      <main className="ml-40">{children}</main>
     </div>
   )
 }
