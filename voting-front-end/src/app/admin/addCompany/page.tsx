@@ -1,10 +1,13 @@
 "use client";
 import { useState, useEffect, FormEvent } from "react";
 import { Pin } from "../../lib/interfaces";
+import PdfButton from "@/app/ui/pdfButton";
 
 export default function AddCompany() {
   // You NEED to change this to a useState and update it when there is an error
   // const errorMessage = document.getElementById('errorMessage');
+  const headings = ["Company", "Representative", "Pin"]
+
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -60,35 +63,37 @@ export default function AddCompany() {
 
   return (
     <div>
-      <table>
+      <table className="border-collapse border border-gray-800 table-auto text-center">
         <thead>
           <tr>
-            <th>Company</th>
-            <th>Representative</th>
-            <th>Pin</th>
+            <th className="bg-gray-200 px-4 py-2 border">Company</th>
+            <th className="bg-gray-200 px-4 py-2 border">Representative</th>
+            <th className="bg-gray-200 px-4 py-2 border">Pin</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Principal</td>
-            <td>pRc5c5</td>
+            <td className="bg-gray-200 px-4 py-2 border">Principal</td>
+            <td className="bg-gray-200 px-4 py-2 border">John</td>
+            <td className="bg-gray-200 px-4 py-2 border">pRc5c5</td>
           </tr>
           <tr>
-            <td>Cambridge</td>
-            <td>CA5fde</td>
+            <td className="bg-gray-200 px-4 py-2 border">Cambridge</td>
+            <td className="bg-gray-200 px-4 py-2 border">John</td>
+            <td className="bg-gray-200 px-4 py-2 border">CA5fde</td>
           </tr>
           {company
             ?.filter((c) => c.pinType == "COMPANY")
             .map((company) => (
               <tr key={company.pinId}>
-                <td>{company.company}</td>
-                <td>{company.ownerName}</td>
-                <td>{company.pin}</td>
+                <td className="bg-gray-200 px-4 py-2 border">{company.company}</td>
+                <td className="bg-gray-200 px-4 py-2 border">{company.ownerName}</td>
+                <td className="bg-gray-200 px-4 py-2 border">{company.pin}</td>
               </tr>
             ))}
         </tbody>
       </table>
-      <form id="companyForm" onSubmit={handleSubmit}>
+      <form id="companyForm" onSubmit={handleSubmit} className="w-fit h-fit bg-gray-200 mt-10">
         <label htmlFor="companyName">Company Name: </label>
         <br />
         <input type="string" id="companyName" name="companyName" />
@@ -98,8 +103,9 @@ export default function AddCompany() {
         <input type="string" id="attendee" name="attendee" />
         <br />
         <button type="submit">Add Company</button>
-        <button onClick={deleteFn}>Clear Companies</button>
       </form>
+      <button onClick={deleteFn}>Clear Companies</button>
+      {company != undefined && <PdfButton headings={headings} tableContent={company}/>}
     </div>
   );
 }

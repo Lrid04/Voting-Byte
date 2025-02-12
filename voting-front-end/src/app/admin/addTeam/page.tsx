@@ -1,9 +1,12 @@
 "use client";
 import { useState, useEffect, FormEvent } from "react";
 import { Team } from "../../lib/interfaces";
+import PdfButton from "@/app/ui/pdfButton";
 
 
 export default function AddTeam() {
+const headings = ["Team Name", "School", "Division"]
+
 function handleSubmit(event:FormEvent<HTMLFormElement>){
   event.preventDefault();
 
@@ -61,30 +64,30 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
 
   return (
     <div>
-      <table>
+      <table className="border-collapse border border-gray-800 table-auto text-center">
         <thead>
           <tr>
-            <th>Team Name</th>
-            <th>School</th>
-            <th>Division</th>
+            <th className="bg-gray-200 px-4 py-2 border">Team Name</th>
+            <th className="bg-gray-200 px-4 py-2 border">School</th>
+            <th className="bg-gray-200 px-4 py-2 border">Division</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Team 1</td>
-            <td>Keota</td>
-            <td>Bits</td>
+            <td className="bg-gray-200 px-4 py-2 border">Team 1</td>
+            <td className="bg-gray-200 px-4 py-2 border">Keota</td>
+            <td className="bg-gray-200 px-4 py-2 border">Bits</td>
           </tr>
           {teams.map((team) => (
             <tr key={team.teamId.toString()}>
-              <td>{team.teamName}</td>
-              <td>{team.school}</td>
-              <td>{team.category}</td>
+              <td className="bg-gray-200 px-4 py-2 border">{team.teamName}</td>
+              <td className="bg-gray-200 px-4 py-2 border">{team.school}</td>
+              <td className="bg-gray-200 px-4 py-2 border">{team.category}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      <form id="schoolForm" onSubmit={handleSubmit}>
+      <form id="schoolForm" onSubmit={handleSubmit} className="w-fit h-fit bg-gray-200 mt-10">
         <label htmlFor="TeamName">Team Name: </label>
         <br />
         <input type="string" id="TeamName" name="TeamName" />
@@ -94,14 +97,16 @@ function handleSubmit(event:FormEvent<HTMLFormElement>){
         <input type="string" id="school" name="school" />
         <br />
         <label htmlFor="division">Education Division: </label>
-        <select name="divison" id="division">
+        <select name="division" id="division">
           <option value="BIT">Bits</option>
           <option value="BYTE">Bytes</option>
           <option value="COLLEGE">IHCC</option>
         </select>
+        <br />
         <button type="submit">Add Team</button>
       </form>
-          <button onClick={deleteFn}>Clear Teams</button>
+      <button onClick={deleteFn}>Clear Teams</button>
+      {teams != undefined && <PdfButton headings={headings} tableContent={teams}/>}
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function homePage(){
                 all of the teams, but you should onl need to do that after Byte Jam is over to put in new teams.
             </p>
             <h1>Companies Page</h1>
-            <p>For the companies page you must enter the name of the company, and a pin in automatically generated. This pin
+            <p>For the companies page you must enter the name of the company, and a pin is automatically generated. This pin
                 will act as a password for company representatives when accessing the voting app.
                 it might be a good idea to add the same company more than once to have a few extra pins just in case.
                 Companies can only vote for IHCC College teams.
@@ -21,10 +21,10 @@ export default function homePage(){
             <h1>Coaches/Judges Page</h1>
             <p>This is similar to the teams page, but is also includes an automatically generated pin for the coaches/Judges, which will be used
                 as a password to gain access to the voting. It should be noted that Bits coaches will vote for teams in the 
-                Bytes divisin and vice versa. IHCC judges can vote for both Bits and Bytes Teams
+                Bytes division and vice versa. IHCC judges can vote for both Bits and Bytes Teams
             </p>
             <h1>Results Page</h1>
-            <p>This is where the results of the event are displayed. You can filter the resultsby IHCC staff,
+            <p>This is where the results of the event are displayed. You can filter the results by IHCC staff,
                 Coaches,Company, and Student. There is a button to clear all of the results, but you will need to do that when the event is over.
             </p>
         </div>
