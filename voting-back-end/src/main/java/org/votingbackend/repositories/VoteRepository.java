@@ -9,4 +9,6 @@ import org.votingbackend.models.Votes;
 @Repository
 public interface VoteRepository extends CrudRepository<Votes, Integer> {
     boolean existsBySessionAndVoteItems(Session session, VoteItems voteItems);
+
+    Votes save(Votes votes);
 }

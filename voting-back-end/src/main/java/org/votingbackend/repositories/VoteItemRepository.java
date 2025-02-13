@@ -13,9 +13,12 @@ import java.util.Optional;
 public interface VoteItemRepository extends CrudRepository<VoteItems, Integer> {
     Optional<VoteItems> findByTeam(Team team);
 
-      boolean existsByTeam(Team team);
+    boolean existsByTeam(Team team);
 
     @Query("select (appAppeal+amazement+theme+performance) from VoteItems where voteItemId = ?1")
     int addVoteFields(int voteItemId);
+
     List<VoteItems> getAllVoteItemsByTeam(Team team);
+
+    VoteItems save(VoteItems voteItems);
 }
