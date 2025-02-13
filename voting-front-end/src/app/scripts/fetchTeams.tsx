@@ -1,4 +1,5 @@
 /**
+ * @author Alex Cassady
  * Using a localhost as a developer testing ground so it can grab the controller
  * @returns A json of the teams, if nothing is found it returns and empty array to prevent crashing on the front end.
  */

@@ -1,5 +1,4 @@
 {
-  "/page": "app/page.js",
-  "/voting/teams/page": "app/voting/teams/page.js",
-  "/voting/votes/page": "app/voting/votes/page.js"
+  "/voting/votes/page": "app/voting/votes/page.js",
+  "/page": "app/page.js"
 }
