@@ -9,7 +9,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { fetchTeams } from "@/app/scripts/fetchTeams";
+import { fetchTeams } from "@/app/lib/fetchTeams";
 import Link from 'next/link'
 
 interface Team {
