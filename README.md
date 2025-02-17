@@ -1,6 +1,4 @@
-# NEW Byte Jam Voting App
-
-The new and improved Byte Jam voting app/admin!
+# New Byte Jam Voting App
 
 ## About
 
